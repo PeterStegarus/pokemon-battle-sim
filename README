@@ -1,0 +1,29 @@
+trebuie sa aleg 4 tipuri de design patterns:
+
+1. observer
+    pentru cand vine randul unui trainer (observable) si pokemoni (observers)
+
+2&3&4. ??strategy?? filter? factory?
+    probabil pt alegerea pokemunului / itemului ca in exemplul lui victor cu taxa
+    probabil doar filter
+    probabil niciuna, sa vad
+
+5. command
+    in duel, "fiecare pokemon aflat în bătălie va executa o comandă indicată de antrenor"
+    fac cate o comanda pt fiecare din cei 6 pokemoni si le dau executorului
+
+
+
+
+
+
+
+
+
+
+---
+
+"fiecare antrenor trebuie reprezentat cu un thread"
+dar batalia este turn based.
+Corectie, nu e turn based: la fiecare moment de timp, fiecare pokemon executa comanda.
+poate pot folosi aici pattern-ul command
