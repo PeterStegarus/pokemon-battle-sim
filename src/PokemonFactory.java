@@ -13,7 +13,7 @@ public class PokemonFactory {
             if (pokemonMaker.is(pokemon))
                 return pokemonMaker;
         }
-        
+
         return null;
     }
 
