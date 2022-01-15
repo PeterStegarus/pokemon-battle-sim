@@ -1,7 +1,4 @@
-import items.Item;
-import items.Sabiuta;
-import items.Scut;
-import items.Vesta;
+package items;
 
 import java.util.Arrays;
 import java.util.List;

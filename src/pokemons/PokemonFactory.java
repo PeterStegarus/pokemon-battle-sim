@@ -1,7 +1,4 @@
-import pokemons.Neutrel1;
-import pokemons.Neutrel2;
-import pokemons.Pikachu;
-import pokemons.Pokemon;
+package pokemons;
 
 import java.util.Arrays;
 import java.util.List;

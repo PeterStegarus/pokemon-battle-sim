@@ -7,6 +7,7 @@ public class Pokemon {
     private int specialAttack;
     private int defense;
     private int specialDefense;
+    private boolean stunned = false;
     private Ability[] abilities;
 
     public Pokemon(String name, int hp, int attack, int specialAttack, int defense, int specialDefense) {
