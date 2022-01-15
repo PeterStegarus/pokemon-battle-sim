@@ -11,6 +11,7 @@ trebuie sa aleg 4 tipuri de design patterns:
 5. command
     in duel, "fiecare pokemon aflat în bătălie va executa o comandă indicată de antrenor"
     fac cate o comanda pt fiecare din cei 6 pokemoni si le dau executorului
+    stai asa ca aparent e 1v1, nu 3v3
 
 
 
