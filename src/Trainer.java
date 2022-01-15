@@ -1,3 +1,5 @@
+import pokemons.Pokemon;
+
 public class Trainer {
     private String name;
     private int age;

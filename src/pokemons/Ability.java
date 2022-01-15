@@ -1,3 +1,5 @@
+package pokemons;
+
 public class Ability {
     private int damage;
     private boolean stun;

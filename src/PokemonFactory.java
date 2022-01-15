@@ -1,19 +1,28 @@
+import pokemons.Neutrel1;
+import pokemons.Neutrel2;
+import pokemons.Pikachu;
+import pokemons.Pokemon;
+
 import java.util.Arrays;
 import java.util.List;
 
 public class PokemonFactory {
     private PokemonMaker selectPokemonMaker(String pokemon) {   // filter pattern
         List<PokemonMaker> pokemonMakers = Arrays.asList(new PikachuMaker(), new Neutrel1Maker(), new Neutrel2Maker());
-        return pokemonMakers.stream().filter(pokemonMaker -> pokemonMaker.is(pokemon)).findFirst().get();
+        for (PokemonMaker pokemonMaker : pokemonMakers) {
+            if (pokemonMaker.is(pokemon))
+                return pokemonMaker;
+        }
+        
+        return null;
     }
 
     public Pokemon make(String pokemon) {   // factory pattern pentru ca makerul face un pokemon nou
         // strategy pattern pentru ca selecteaza o implementare de maker
         PokemonMaker pokemonMaker = selectPokemonMaker(pokemon);
-        return pokemonMaker.make();
+        return pokemonMaker != null ? pokemonMaker.make() : null;
     }
 }
-
 
 interface PokemonMaker {
     boolean is(String pokemon);
