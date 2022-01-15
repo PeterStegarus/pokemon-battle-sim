@@ -9,12 +9,8 @@ import java.util.List;
 public class PokemonFactory {
     private PokemonMaker selectPokemonMaker(String pokemon) {   // filter pattern
         List<PokemonMaker> pokemonMakers = Arrays.asList(new PikachuMaker(), new Neutrel1Maker(), new Neutrel2Maker());
-        for (PokemonMaker pokemonMaker : pokemonMakers) {
-            if (pokemonMaker.is(pokemon))
-                return pokemonMaker;
-        }
 
-        return null;
+        return pokemonMakers.stream().filter(pokemonMaker -> pokemonMaker.is(pokemon)).findFirst().orElse(null);
     }
 
     public Pokemon make(String pokemon) {   // factory pattern pentru ca makerul face un pokemon nou

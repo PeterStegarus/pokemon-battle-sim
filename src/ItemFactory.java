@@ -9,12 +9,8 @@ import java.util.List;
 public class ItemFactory {
     private ItemMaker selectItemMaker(String item) {   // filter pattern
         List<ItemMaker> itemMakers = Arrays.asList(new ScutMaker(), new VestaMaker(), new SabiutaMaker());
-        for (ItemMaker itemMaker : itemMakers) {
-            if (itemMaker.is(item))
-                return itemMaker;
-        }
 
-        return null;
+        return itemMakers.stream().filter(itemMaker -> itemMaker.is(item)).findFirst().orElse(null);
     }
 
     public Item make(String item) {   // factory pattern pentru ca makerul face un item nou
