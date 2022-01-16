@@ -32,3 +32,19 @@ trebuie sa aleg 4 tipuri de design patterns:
 dar batalia este turn based.
 Corectie, nu e turn based: la fiecare moment de timp, fiecare pokemon executa comanda.
 poate pot folosi aici pattern-ul command
+
+
+
+
+------
+lupta:
+
+cat timp ambii pokemoni sunt vii:
+    obtin cate o comanda pt fiecare pokemon
+    le dau executorului si rulez
+        la inceputul comenzii, se incepe randul atacatorului si apoi
+            daca este stunned, return
+            altfel, se asteapta pana se incepe si randul inamicului
+        se aplica damage-ul (de la atac sau abilitati)
+        se anunta terminarea randului atacatorului
+        se asteapta terminarea randului inamicului dupa care aplic stun si dodge de la abilitatea atacatorului

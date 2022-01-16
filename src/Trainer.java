@@ -1,10 +1,7 @@
-import com.google.gson.JsonDeserializationContext;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParseException;
 import pokemons.Pokemon;
 
 import java.util.Arrays;
+import java.util.Random;
 
 public class Trainer {
     private String name;
@@ -21,8 +18,25 @@ public class Trainer {
         return name;
     }
 
+    public int getAge() {
+        return age;
+    }
+
+    public Pokemon[] getPokemons() {
+        return pokemons;
+    }
+
     public String toString() {
         return name + " " + age + " " + Arrays.toString(pokemons);
+    }
+
+    private Pokemon selectRandomPokemon() {
+        int random = new Random().nextInt(3);
+        return pokemons[random];
+    }
+
+    public Pokemon choosePokemon() {
+        return selectRandomPokemon();
     }
 // antrenorul da comenzi pokemonilor
 }
