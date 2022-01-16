@@ -2,6 +2,7 @@ trebuie sa aleg 4 tipuri de design patterns:
 
 1. observer
     pentru cand vine randul unui trainer (observable) si pokemoni (observers)
+    de fapt nu cred ca mai e cazul
 
 2&3&4. ??strategy?? filter? factory?
     probabil pt alegerea pokemunului / itemului ca in exemplul lui victor cu taxa
@@ -12,6 +13,9 @@ trebuie sa aleg 4 tipuri de design patterns:
     in duel, "fiecare pokemon aflat în bătălie va executa o comandă indicată de antrenor"
     fac cate o comanda pt fiecare din cei 6 pokemoni si le dau executorului
     stai asa ca aparent e 1v1, nu 3v3
+    si se pare ca amandoi lanseaza cate o comanda simultan
+    dar e vreun cooldown intre comenzi? stai ca cooldown nu e thread.sleep(secunde) cum credeam, e un numar de ture
+
 
 
 

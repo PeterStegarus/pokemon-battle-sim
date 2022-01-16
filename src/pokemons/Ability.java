@@ -12,4 +12,8 @@ public class Ability {
         this.dodge = dodge;
         this.cooldown = cooldown;
     }
+
+    public String toString() {
+        return damage + " " + stun + " " + dodge + " " + cooldown;
+    }
 }

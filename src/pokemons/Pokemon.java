@@ -1,5 +1,7 @@
 package pokemons;
 
+import java.util.Arrays;
+
 public class Pokemon {
     private String name;
     private int hp;
@@ -25,5 +27,9 @@ public class Pokemon {
 
     public Ability[] getAbilities() {
         return abilities;
+    }
+
+    public String toString() {
+        return name + " " + hp + " " + attack + " " + specialAttack + " " + defense + " " + specialDefense + " " + Arrays.toString(abilities);
     }
 }
