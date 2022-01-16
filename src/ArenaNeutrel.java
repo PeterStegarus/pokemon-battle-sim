@@ -4,8 +4,8 @@ import pokemons.PokemonFactory;
 public class ArenaNeutrel extends ArenaEvent {
     private Pokemon neutrel;
 
-    public ArenaNeutrel(int neutrel, Trainer trainer1, Trainer trainer2) {
-        super(trainer1, trainer2);
+    public ArenaNeutrel(int neutrel, Trainer trainer1, Pokemon pokemon1, Trainer trainer2, Pokemon pokemon2) {
+        super(trainer1, pokemon1, trainer2, pokemon2);
         this.neutrel = new PokemonFactory().make("Neutrel" + neutrel);
     }
 
@@ -25,15 +25,3 @@ public class ArenaNeutrel extends ArenaEvent {
             t2Pokemon.evolve();
     }
 }
-
-//class FightNeutrel {
-//    private Trainer trainer;
-//    private Pokemon pokemon;
-//    private Pokemon neutrel;
-//
-//    public FightNeutrel(Trainer trainer, Pokemon pokemon, Pokemon neutrel) {
-//        this.trainer = trainer;
-//        this.pokemon = pokemon;
-//        this.neutrel = neutrel;
-//    }
-//}
