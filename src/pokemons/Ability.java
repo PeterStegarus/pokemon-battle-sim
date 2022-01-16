@@ -5,12 +5,18 @@ public class Ability {
     private boolean stun;
     private boolean dodge;
     private int cooldown;
+    final private int baseCooldown;
 
     public Ability(int damage, boolean stun, boolean dodge, int cooldown) {
         this.damage = damage;
         this.stun = stun;
         this.dodge = dodge;
         this.cooldown = cooldown;
+        this.baseCooldown = cooldown;
+    }
+
+    public void resetCooldown() {
+        cooldown = baseCooldown;
     }
 
     public void reduceCooldown() {

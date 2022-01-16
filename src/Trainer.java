@@ -1,5 +1,6 @@
 import pokemons.Pokemon;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 
@@ -38,5 +39,20 @@ public class Trainer {
     public Pokemon choosePokemon() {
         return selectRandomPokemon();
     }
-// antrenorul da comenzi pokemonilor
+
+    private Command generateRandomCommand(Pokemon attacker, Pokemon target) {
+        ArrayList<Command> possibleCommands = new ArrayList<>();
+        possibleCommands.add(new AttackCommand(attacker, target));
+        for (int i = 0; i < attacker.getAbilities().length; i++) {
+            if (attacker.getAbilities()[i].getCooldown() == 0)
+                possibleCommands.add(new AbilityCommand(attacker, target, i));
+        }
+
+        int random = new Random().nextInt(possibleCommands.size());
+        return possibleCommands.get(random);
+    }
+
+    public Command giveCommand(Pokemon friend, Pokemon enemy) {
+        return generateRandomCommand(friend, enemy);
+    }
 }
