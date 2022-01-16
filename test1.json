@@ -3,18 +3,54 @@
     "name": "jon",
     "age": 20,
     "pokemons": [
-      "Pikachu",
-      "Bulbasaur",
-      "Charmander"
+      {
+        "name": "Pikachu",
+        "items": [
+          "Scut",
+          "Sabiuta"
+        ]
+      },
+      {
+        "name": "Bulbasaur",
+        "items": [
+          "Scut",
+          "Vesta"
+        ]
+      },
+      {
+        "name": "Charmander",
+        "items": [
+          "Vesta",
+          "Scut",
+          "Sabiuta"
+        ]
+      }
     ]
   },
   {
     "name": "jaon",
     "age": 30,
     "pokemons": [
-      "Neutrel2",
-      "Charmander",
-      "Neutrel1"
+      {
+        "name": "Bulbasaur",
+        "items": [
+          "Sabiuta"
+        ]
+      },
+      {
+        "name": "Charmander",
+        "items": [
+          "Scut",
+          "Scut"
+        ]
+      },
+      {
+        "name": "Pikachu",
+        "items": [
+          "Vesta",
+          "Sabiuta"
+        ]
+      }
     ]
   }
 ]

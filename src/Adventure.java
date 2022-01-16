@@ -1,9 +1,9 @@
 import java.util.Random;
 
 public class Adventure {
-    ArenaEvent[] arenaEvents;
-    Trainer trainer1;
-    Trainer trainer2;
+    private ArenaEvent[] arenaEvents;
+    private Trainer trainer1;
+    private Trainer trainer2;
 
     public Adventure(Trainer trainer1, Trainer trainer2) {
         this.trainer1 = trainer1;

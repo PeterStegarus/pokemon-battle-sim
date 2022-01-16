@@ -1,5 +1,7 @@
 package pokemons;
 
+import items.Item;
+
 import java.util.Arrays;
 
 public class Pokemon {
@@ -27,6 +29,14 @@ public class Pokemon {
 
     public Ability[] getAbilities() {
         return abilities;
+    }
+
+    public void addItem(Item item) {
+        hp += item.getHp();
+        attack += item.getAttack();
+        specialAttack += item.getSpecialAttack();
+        defense += item.getDefense();
+        specialDefense += item.getSpecialDefense();
     }
 
     public String toString() {

@@ -16,4 +16,24 @@ public class Item {
         this.defense = defense;
         this.specialDefense = specialDefense;
     }
+
+    public int getHp() {
+        return hp;
+    }
+
+    public int getAttack() {
+        return attack;
+    }
+
+    public int getSpecialAttack() {
+        return specialAttack;
+    }
+
+    public int getDefense() {
+        return defense;
+    }
+
+    public int getSpecialDefense() {
+        return specialDefense;
+    }
 }
