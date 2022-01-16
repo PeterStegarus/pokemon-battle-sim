@@ -7,14 +7,14 @@ import java.util.Arrays;
 public class Pokemon {
     private String name;
     private int hp;
-    private int attack;
-    private int specialAttack;
+    private Integer attack;
+    private Integer specialAttack;
     private int defense;
     private int specialDefense;
     private boolean stunned = false;
     private Ability[] abilities;
 
-    public Pokemon(String name, int hp, int attack, int specialAttack, int defense, int specialDefense) {
+    public Pokemon(String name, int hp, Integer attack, Integer specialAttack, int defense, int specialDefense) {
         this.name = name;
         this.hp = hp;
         this.attack = attack;
@@ -33,8 +33,8 @@ public class Pokemon {
 
     public void addItem(Item item) {
         hp += item.getHp();
-        attack += item.getAttack();
-        specialAttack += item.getSpecialAttack();
+        if (attack != null) attack += item.getAttack();
+        if (specialAttack != null) specialAttack += item.getSpecialAttack();
         defense += item.getDefense();
         specialDefense += item.getSpecialDefense();
     }
