@@ -5,7 +5,8 @@ import java.util.List;
 
 public class PokemonFactory {
     private PokemonMaker selectPokemonMaker(String pokemon) {   // filter pattern
-        List<PokemonMaker> pokemonMakers = Arrays.asList(new PikachuMaker(), new Neutrel1Maker(), new Neutrel2Maker());
+        List<PokemonMaker> pokemonMakers = Arrays.asList(new Neutrel1Maker(), new Neutrel2Maker(), new PikachuMaker(),
+                new BulbasaurMaker(), new CharmanderMaker());
 
         return pokemonMakers.stream().filter(pokemonMaker -> pokemonMaker.is(pokemon)).findFirst().orElse(null);
     }
@@ -21,16 +22,6 @@ interface PokemonMaker {
     boolean is(String pokemon);
 
     Pokemon make();
-}
-
-class PikachuMaker implements PokemonMaker {
-    public boolean is(String pokemon) {
-        return "Pikachu".equals(pokemon);
-    }
-
-    public Pokemon make() {
-        return new Pikachu();
-    }
 }
 
 class Neutrel1Maker implements PokemonMaker {
@@ -50,5 +41,37 @@ class Neutrel2Maker implements PokemonMaker {
 
     public Pokemon make() {
         return new Neutrel2();
+    }
+}
+
+class PikachuMaker implements PokemonMaker {
+    public boolean is(String pokemon) {
+        return "Pikachu".equals(pokemon);
+    }
+
+    public Pokemon make() {
+        return new Pikachu();
+    }
+}
+
+
+class BulbasaurMaker implements PokemonMaker {
+    public boolean is(String pokemon) {
+        return "Bulbasaur".equals(pokemon);
+    }
+
+    public Pokemon make() {
+        return new Bulbasaur();
+    }
+}
+
+
+class CharmanderMaker implements PokemonMaker {
+    public boolean is(String pokemon) {
+        return "Charmander".equals(pokemon);
+    }
+
+    public Pokemon make() {
+        return new Charmander();
     }
 }
