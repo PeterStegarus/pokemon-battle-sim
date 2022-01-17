@@ -24,10 +24,12 @@ public class Adventure {
     }
 
     public void play() {
-        ArenaEvent arenaEvent;
-        for (int i = 0; i < 3; i++) {
-            arenaEvent = selectRandomEvent();
-            arenaEvent.fight();
-        }
+//        ArenaEvent arenaEvent;
+//        for (int i = 0; i < 3; i++) {
+//            arenaEvent = selectRandomEvent();
+//            arenaEvent.fight();
+//        }
+        ArenaEvent event = new ArenaNeutrel(1, trainer1, pokemon1, trainer2, pokemon2);
+        event.fight();
     }
 }

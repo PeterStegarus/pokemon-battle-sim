@@ -11,8 +11,12 @@ public class Ability {
         this.damage = damage;
         this.stun = stun;
         this.dodge = dodge;
-        this.cooldown = cooldown;
+        this.cooldown = 0;
         this.baseCooldown = cooldown;
+    }
+
+    public void setCooldown(int cooldown) {
+        this.cooldown = cooldown;
     }
 
     public void resetCooldown() {

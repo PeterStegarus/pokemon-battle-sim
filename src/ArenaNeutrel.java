@@ -1,6 +1,10 @@
 import pokemons.Pokemon;
 import pokemons.PokemonFactory;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
+
 public class ArenaNeutrel extends ArenaEvent {
     private Pokemon neutrel;
 
@@ -11,17 +15,36 @@ public class ArenaNeutrel extends ArenaEvent {
 
     // returns true if neutrel loses, false otherwise
     private boolean neutrelFight(Trainer trainer, Pokemon pokemon) {
+        System.out.println("lupta " + trainer.getName() + " cu " + pokemon.toString() + " impotriva " + neutrel.toString());
+        int i = 0;
 
-        return true;
+        while (!pokemon.isDefeated() && !neutrel.isDefeated()) {
+            ExecutorService executor = Executors.newFixedThreadPool(2);
+            executor.execute(new AttackCommand(neutrel, pokemon));
+            executor.execute(trainer.giveCommand(pokemon, neutrel));
+            executor.shutdown();
+
+            try {
+                if (!executor.awaitTermination(10, TimeUnit.SECONDS))
+                    System.exit(0);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+            System.out.println("[" + i + "] Tura " + i + ": " + pokemon.getName() + "_" + pokemon.getHp() + " " + neutrel.getName() + "_" + neutrel.getHp());
+            i++;
+        }
+
+        boolean result = !pokemon.isDefeated();
+        pokemon.reset();
+        return result;
     }
 
     public void fight() {
-        Pokemon t1Pokemon = trainer1.choosePokemon();
-        if (neutrelFight(trainer1, t1Pokemon))
-            t1Pokemon.evolve();
+        if (neutrelFight(trainer1, pokemon1))
+            pokemon1.evolve();
 
-        Pokemon t2Pokemon = trainer2.choosePokemon();
-        if (neutrelFight(trainer2, t2Pokemon))
-            t2Pokemon.evolve();
+        if (neutrelFight(trainer2, pokemon2))
+            pokemon2.evolve();
     }
 }

@@ -9,6 +9,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class Pokemon {
     private String name;
+    private Integer baseHp;
     private Integer hp;
     private Integer attack;
     private Integer specialAttack;
@@ -18,14 +19,31 @@ public class Pokemon {
     private boolean stunned = false;
     private boolean canDodge = false;
     private boolean fighting = false;
+    private boolean finished = false;
 
     public Pokemon(String name, int hp, Integer attack, Integer specialAttack, int defense, int specialDefense) {
         this.name = name;
+        this.baseHp = hp;
         this.hp = hp;
         this.attack = attack;
         this.specialAttack = specialAttack;
         this.defense = defense;
         this.specialDefense = specialDefense;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Integer getHp() {
+        return hp;
+    }
+
+    public void reset() {
+        hp = baseHp;
+        for (Ability ability : abilities) {
+            ability.setCooldown(0);
+        }
     }
 
     public void setAbilities(Ability[] abilities) {
@@ -36,8 +54,12 @@ public class Pokemon {
         return fighting;
     }
 
-    public Integer getHp() {
-        return hp;
+    public boolean isFinished() {
+        return finished;
+    }
+
+    public boolean isDefeated() {
+        return hp <= 0;
     }
 
     public Integer getAttack() {
@@ -69,22 +91,34 @@ public class Pokemon {
     }
 
     public void sufferAttack(int damage) {
-        if (canDodge) return;
+        if (canDodge || damage < defense) {
+//            System.out.println(this.name + " dodged!");
+            return;
+        }
         hp -= damage - defense;
     }
 
     public void sufferSpecialAttack(int damage) {
-        if (canDodge) return;
+        if (canDodge || damage < defense) {
+//            System.out.println(this.name + " dodged!");
+            return;
+        }
         hp -= damage - specialDefense;
     }
 
     public void sufferAbilityDamage(int damage) {
-        if (canDodge) return;
+        if (canDodge || damage < defense) {
+//            System.out.println(this.name + " dodged!");
+            return;
+        }
         hp -= damage;
     }
 
     public void stun() {
-        if (canDodge) return;
+        if (canDodge) {
+            System.out.println(this.name + " dodged the stun ability!");
+            return;
+        }
         stunned = true;
     }
 
@@ -102,6 +136,7 @@ public class Pokemon {
 
     public void startTurn() {
         fighting = true;
+        finished = false;
         stunned = false;
         for (Ability ability : abilities) {
             if (ability != null)
@@ -111,7 +146,12 @@ public class Pokemon {
 
     public void endTurn() {
         fighting = false;
+        finished = false;
         canDodge = false;
+    }
+
+    public void preEndTurn() {
+        finished = true;
     }
 
     public String toString() {

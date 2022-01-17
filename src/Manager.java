@@ -46,8 +46,6 @@ public class Manager {
             TrainerData[] trainers = gson.fromJson(new FileReader(filePath), TrainerData[].class);
             trainer1 = readTrainer(trainers[0]);
             trainer2 = readTrainer(trainers[1]);
-
-            System.out.println(trainer1.toString() + "\n" + trainer2.toString());
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -56,6 +54,8 @@ public class Manager {
     public static void main(String[] args) {
         Manager manager = new Manager();
         manager.readTrainers("test1.json");
+
+        System.out.println(manager.trainer1.toString() + "\n" + manager.trainer2.toString());
 
         Adventure adventure = new Adventure(manager.trainer1, manager.trainer2);
         adventure.play();
