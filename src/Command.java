@@ -25,7 +25,7 @@ class AttackCommand extends Command {
 
     @Override
     public void run() {
-        System.out.println("<attack> " + attacker.getName() + " " + target.getName());
+        System.out.println("<attack> " + attacker.getName() + " attacks " + target.getName());
         // intai, initializeaza lupta: veririca stunurile si redu cooldownurile la amandoi
         lock.lock();
         boolean skip = attacker.isStunned();
@@ -83,7 +83,7 @@ class AbilityCommand extends Command {
 
     @Override
     public void run() {
-        System.out.println("<ability " + this.ability.toString() + "> " + attacker.getName() + " " + target.getName());
+        System.out.println("<ability " + this.ability.toString() + "> " + attacker.getName() + " attacks " + target.getName());
         // intai, initializeaza lupta: veririca stunurile si redu cooldownurile la amandoi
         lock.lock();
         boolean skip = attacker.isStunned();
@@ -134,6 +134,7 @@ class AbilityCommand extends Command {
             // dupa ce s-a terminat tura, aplic stun-ul care va fi valabil pentru tura urmatoare
             if (ability.isStun())
                 target.stun();
+            ability.resetCooldown();
         }
 
         lock.unlock();

@@ -25,18 +25,21 @@ public class ArenaNeutrel extends ArenaEvent {
             executor.shutdown();
 
             try {
-                if (!executor.awaitTermination(10, TimeUnit.SECONDS))
+                if (!executor.awaitTermination(10, TimeUnit.SECONDS)) {
+                    System.out.println("######################################### oopsie ##############3#################################");
                     System.exit(0);
+                }
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
 
-            System.out.println("[" + i + "] Tura " + i + ": " + pokemon.getName() + "_" + pokemon.getHp() + " " + neutrel.getName() + "_" + neutrel.getHp());
+            System.out.println("[" + i + "] Turn " + i + " result: " + pokemon.getName() + "_" + pokemon.getHp() + " " + neutrel.getName() + "_" + neutrel.getHp());
             i++;
         }
 
         boolean result = !pokemon.isDefeated();
         pokemon.reset();
+        neutrel.reset();
         return result;
     }
 
@@ -46,5 +49,10 @@ public class ArenaNeutrel extends ArenaEvent {
 
         if (neutrelFight(trainer2, pokemon2))
             pokemon2.evolve();
+
+        System.out.println(pokemon1.toString());
+        System.out.println(pokemon2.toString());
+//        System.out.println(trainer1.toString());
+//        System.out.println(trainer2.toString());
     }
 }

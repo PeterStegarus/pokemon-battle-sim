@@ -29,7 +29,9 @@ public class Adventure {
 //            arenaEvent = selectRandomEvent();
 //            arenaEvent.fight();
 //        }
-        ArenaEvent event = new ArenaNeutrel(1, trainer1, pokemon1, trainer2, pokemon2);
+        ArenaEvent event = arenaEvents[0];
         event.fight();
+//        event = arenaEvents[2];
+//        event.fight();
     }
 }

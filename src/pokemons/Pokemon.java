@@ -9,8 +9,8 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class Pokemon {
     private String name;
-    private Integer baseHp;
-    private Integer hp;
+    private int baseHp;
+    private int hp;
     private Integer attack;
     private Integer specialAttack;
     private int defense;
@@ -42,7 +42,8 @@ public class Pokemon {
     public void reset() {
         hp = baseHp;
         for (Ability ability : abilities) {
-            ability.setCooldown(0);
+            if (ability != null)
+                ability.setCooldown(0);
         }
     }
 
@@ -123,7 +124,8 @@ public class Pokemon {
     }
 
     public void addItem(Item item) {
-        hp += item.getHp();
+        baseHp += item.getHp();
+        hp = baseHp;
         if (attack != null) attack += item.getAttack();
         if (specialAttack != null) specialAttack += item.getSpecialAttack();
         defense += item.getDefense();
