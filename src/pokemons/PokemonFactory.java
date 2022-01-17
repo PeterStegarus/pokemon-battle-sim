@@ -6,7 +6,8 @@ import java.util.List;
 public class PokemonFactory {
     private PokemonMaker selectPokemonMaker(String pokemon) {   // filter pattern
         List<PokemonMaker> pokemonMakers = Arrays.asList(new Neutrel1Maker(), new Neutrel2Maker(), new PikachuMaker(),
-                new BulbasaurMaker(), new CharmanderMaker());
+                new BulbasaurMaker(), new CharmanderMaker(), new SquirtleMaker(), new SnorlaxMaker(), new VulpixMaker(),
+                new EeveeMaker(), new JigglypuffMaker(), new MeowthMaker(), new PsyduckMaker());
 
         return pokemonMakers.stream().filter(pokemonMaker -> pokemonMaker.is(pokemon)).findFirst().orElse(null);
     }
@@ -73,5 +74,75 @@ class CharmanderMaker implements PokemonMaker {
 
     public Pokemon make() {
         return new Charmander();
+    }
+}
+
+class SquirtleMaker implements PokemonMaker {
+    public boolean is(String pokemon) {
+        return "Squirtle".equals(pokemon);
+    }
+
+    public Pokemon make() {
+        return new Squirtle();
+    }
+}
+
+class SnorlaxMaker implements PokemonMaker {
+    public boolean is(String pokemon) {
+        return "Snorlax".equals(pokemon);
+    }
+
+    public Pokemon make() {
+        return new Snorlax();
+    }
+}
+
+class VulpixMaker implements PokemonMaker {
+    public boolean is(String pokemon) {
+        return "Vulpix".equals(pokemon);
+    }
+
+    public Pokemon make() {
+        return new Vulpix();
+    }
+}
+
+class EeveeMaker implements PokemonMaker {
+    public boolean is(String pokemon) {
+        return "Eevee".equals(pokemon);
+    }
+
+    public Pokemon make() {
+        return new Eevee();
+    }
+}
+
+class JigglypuffMaker implements PokemonMaker {
+    public boolean is(String pokemon) {
+        return "Jigglypuff".equals(pokemon);
+    }
+
+    public Pokemon make() {
+        return new Jigglypuff();
+    }
+}
+
+class MeowthMaker implements PokemonMaker {
+    public boolean is(String pokemon) {
+        return "Meowth".equals(pokemon);
+    }
+
+    public Pokemon make() {
+        return new Meowth();
+    }
+}
+
+class PsyduckMaker implements PokemonMaker {
+    public boolean is(String pokemon) {
+        return "Psyduck".equals(pokemon);
+    }
+
+    public Pokemon make() {
+        return new Psyduck();
     }
 }
