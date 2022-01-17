@@ -1,3 +1,5 @@
+package game;
+
 import pokemons.Pokemon;
 import pokemons.PokemonFactory;
 

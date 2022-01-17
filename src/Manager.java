@@ -1,4 +1,6 @@
 import com.google.gson.*;
+import game.Adventure;
+import game.Trainer;
 import items.Item;
 import items.ItemFactory;
 import pokemons.Pokemon;

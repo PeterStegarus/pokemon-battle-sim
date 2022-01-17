@@ -1,3 +1,5 @@
+package game;
+
 import pokemons.Ability;
 import pokemons.Pokemon;
 
