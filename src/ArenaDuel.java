@@ -9,6 +9,24 @@ public class ArenaDuel extends ArenaEvent {
         super(trainer1, pokemon1, trainer2, pokemon2);
     }
 
+    private void execTurn(Trainer trainer1, Pokemon pokemon1, Trainer trainer2, Pokemon pokemon2, int i) {
+        ExecutorService executor = Executors.newFixedThreadPool(2);
+        executor.execute(trainer1.giveCommand(pokemon1, pokemon2));
+        executor.execute(trainer2.giveCommand(pokemon2, pokemon1));
+        executor.shutdown();
+
+        try {
+            if (!executor.awaitTermination(10, TimeUnit.SECONDS)) {
+                System.out.println("######################################### oopsie ##############3#################################");
+                System.exit(0);
+            }
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println("[" + i + "] Turn " + i + " result: " + pokemon1.getName() + "_" + pokemon1.getHp() + " " + pokemon2.getName() + "_" + pokemon2.getHp());
+    }
+
     // returns true if neutrel loses, false otherwise
     private String duel(Trainer trainer1, Pokemon pokemon1, Trainer trainer2, Pokemon pokemon2) {
         System.out.println("------------------\n" + trainer1.getName() + ": " + pokemon1.toString());
@@ -18,27 +36,23 @@ public class ArenaDuel extends ArenaEvent {
         int i = 0;
 
         while (!pokemon1.isDefeated() && !pokemon2.isDefeated()) {
-            ExecutorService executor = Executors.newFixedThreadPool(2);
-            executor.execute(trainer1.giveCommand(pokemon1, pokemon2));
-            executor.execute(trainer2.giveCommand(pokemon2, pokemon1));
-            executor.shutdown();
-
-            try {
-                if (!executor.awaitTermination(10, TimeUnit.SECONDS)) {
-                    System.out.println("######################################### oopsie ##############3#################################");
-                    System.exit(0);
-                }
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-
-            System.out.println("[" + i + "] Turn " + i + " result: " + pokemon1.getName() + "_" + pokemon1.getHp() + " " + pokemon2.getName() + "_" + pokemon2.getHp());
+            execTurn(trainer1, pokemon1, trainer2, pokemon2, i);
             i++;
         }
 
-        if (pokemon1.isDefeated())
-            return pokemon2.toString();
-        return pokemon1.toString();
+        String winner;
+
+        if (pokemon1.isDefeated()) {
+            winner = pokemon2.toString();
+            pokemon2.reset();
+            pokemon2.evolve();
+        } else {
+            winner = pokemon1.toString();
+            pokemon1.reset();
+            pokemon1.evolve();
+        }
+
+        return winner;
     }
 
     public void fight() {

@@ -13,27 +13,31 @@ public class ArenaNeutrel extends ArenaEvent {
         this.neutrel = new PokemonFactory().make("Neutrel" + neutrel);
     }
 
+    private void execTurn(Trainer trainer, Pokemon pokemon, int i) {
+        ExecutorService executor = Executors.newFixedThreadPool(2);
+        executor.execute(new AttackCommand(neutrel, pokemon));
+        executor.execute(trainer.giveCommand(pokemon, neutrel));
+        executor.shutdown();
+
+        try {
+            if (!executor.awaitTermination(10, TimeUnit.SECONDS)) {
+                System.out.println("######################################### oopsie ##############3#################################");
+                System.exit(0);
+            }
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println("[" + i + "] Turn " + i + " result: " + pokemon.getName() + "_" + pokemon.getHp() + " " + neutrel.getName() + "_" + neutrel.getHp());
+    }
+
     // returns true if neutrel loses, false otherwise
     private boolean neutrelFight(Trainer trainer, Pokemon pokemon) {
         System.out.println("lupta " + trainer.getName() + " cu " + pokemon.toString() + " impotriva " + neutrel.toString());
         int i = 0;
 
         while (!pokemon.isDefeated() && !neutrel.isDefeated()) {
-            ExecutorService executor = Executors.newFixedThreadPool(2);
-            executor.execute(new AttackCommand(neutrel, pokemon));
-            executor.execute(trainer.giveCommand(pokemon, neutrel));
-            executor.shutdown();
-
-            try {
-                if (!executor.awaitTermination(10, TimeUnit.SECONDS)) {
-                    System.out.println("######################################### oopsie ##############3#################################");
-                    System.exit(0);
-                }
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-
-            System.out.println("[" + i + "] Turn " + i + " result: " + pokemon.getName() + "_" + pokemon.getHp() + " " + neutrel.getName() + "_" + neutrel.getHp());
+            execTurn(trainer, pokemon, i);
             i++;
         }
 
