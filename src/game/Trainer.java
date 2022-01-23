@@ -43,7 +43,7 @@ public class Trainer {
     private ArrayList<Item> selectItems() {
         ArrayList<Item> items = new ArrayList<>();
         Item newItem;
-        ItemFactory itemFactory = new ItemFactory();
+        ItemFactory itemFactory = ItemFactory.getInstance();
         int random = new Random().nextInt(2) + 1;
         while (items.size() < random) {
             newItem = itemFactory.makeRandom();

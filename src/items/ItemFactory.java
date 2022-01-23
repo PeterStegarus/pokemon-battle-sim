@@ -5,6 +5,17 @@ import java.util.List;
 import java.util.Random;
 
 public class ItemFactory {
+    private static ItemFactory instance;
+
+    private ItemFactory() {
+    }
+
+    public static ItemFactory getInstance() {
+        if (instance == null)
+            instance = new ItemFactory();
+        return instance;
+    }
+
     private ItemMaker selectItemMaker(String item) {   // filter pattern
         List<ItemMaker> itemMakers = Arrays.asList(new ScutMaker(), new VestaMaker(), new SabiutaMaker(),
                 new BaghetaMagicaMaker(), new VitamineMaker(), new BradDeCraciunMaker(), new PelerinaMaker());

@@ -12,7 +12,7 @@ public class ArenaNeutrel extends ArenaEvent {
 
     public ArenaNeutrel(int neutrel, Trainer trainer1, Pokemon pokemon1, Trainer trainer2, Pokemon pokemon2) {
         super(trainer1, pokemon1, trainer2, pokemon2);
-        this.neutrel = new PokemonFactory().make("Neutrel" + neutrel);
+        this.neutrel = PokemonFactory.getInstance().make("Neutrel" + neutrel);
     }
 
     private void execTurn(Trainer trainer, Pokemon pokemon, int i) {

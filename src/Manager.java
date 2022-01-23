@@ -26,7 +26,7 @@ public class Manager {
     }
 
     private Pokemon readPokemon(PokemonData p) {
-        Pokemon pokemon = new PokemonFactory().make(p.name);
+        Pokemon pokemon = PokemonFactory.getInstance().make(p.name);
         return pokemon;
     }
 

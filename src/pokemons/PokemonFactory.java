@@ -4,6 +4,17 @@ import java.util.Arrays;
 import java.util.List;
 
 public class PokemonFactory {
+    private static PokemonFactory instance;
+
+    private PokemonFactory() {
+    }
+
+    public static PokemonFactory getInstance() {
+        if (instance == null)
+            instance = new PokemonFactory();
+        return instance;
+    }
+
     private PokemonMaker selectPokemonMaker(String pokemon) {   // filter pattern
         List<PokemonMaker> pokemonMakers = Arrays.asList(new Neutrel1Maker(), new Neutrel2Maker(), new PikachuMaker(),
                 new BulbasaurMaker(), new CharmanderMaker(), new SquirtleMaker(), new SnorlaxMaker(), new VulpixMaker(),
