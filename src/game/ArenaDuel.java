@@ -30,7 +30,7 @@ public class ArenaDuel extends ArenaEvent {
     }
 
     // returns true if neutrel loses, false otherwise
-    private String duel(Trainer trainer1, Pokemon pokemon1, Trainer trainer2, Pokemon pokemon2) {
+    private int duel(Trainer trainer1, Pokemon pokemon1, Trainer trainer2, Pokemon pokemon2) {
         System.out.println("------------------\n" + trainer1.getName() + ": " + pokemon1.toString());
         System.out.println("vs");
         System.out.println(trainer2.getName() + ": " + pokemon2.toString());
@@ -42,27 +42,29 @@ public class ArenaDuel extends ArenaEvent {
             i++;
         }
 
-        String winner;
+        if (pokemon1.isDefeated() && pokemon2.isDefeated())
+            return -1;  // draw
 
-        if (pokemon1.isDefeated()) {
-            winner = pokemon2.toString();
+        if (pokemon1.isDefeated()) {    // trainer2 wins
             pokemon2.reset();
             pokemon2.evolve();
-        } else {
-            winner = pokemon1.toString();
-            pokemon1.reset();
-            pokemon1.evolve();
+            return 2;
         }
 
-        return winner;
+        // else, trainer1 wins
+        pokemon1.reset();
+        pokemon1.evolve();
+        return 1;
     }
 
-    public void fight() {
-        System.out.println("Winner:" + duel(trainer1, pokemon1, trainer2, pokemon2));
+    public int fight() {
+        int result = duel(trainer1, pokemon1, trainer2, pokemon2);
+//        System.out.println("Winner:" + result);
 
         System.out.println(pokemon1.toString());
         System.out.println(pokemon2.toString());
 //        System.out.println(trainer1.toString());
 //        System.out.println(trainer2.toString());
+        return result;
     }
 }

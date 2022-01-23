@@ -25,15 +25,23 @@ public class Adventure {
         return arenaEvents[random];
     }
 
-    public void play() {
-//        ArenaEvent arenaEvent;
-//        for (int i = 0; i < 3; i++) {
-//            arenaEvent = selectRandomEvent();
-//            arenaEvent.fight();
-//        }
-        ArenaEvent event = arenaEvents[0];
-        event.fight();
-//        event = arenaEvents[2];
-//        event.fight();
+    private String end(int result) {
+        if (result == 0)
+            return "Draw";
+        if (result == 1)
+            return trainer1.getName();
+        return trainer2.getName();
+    }
+
+    public String play() {
+        ArenaEvent arenaEvent;
+        int result;
+        while (true) {
+            arenaEvent = selectRandomEvent();
+            result = arenaEvent.fight();
+            if (result != 0) {
+                return end(result);
+            }
+        }
     }
 }

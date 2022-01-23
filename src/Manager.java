@@ -56,6 +56,6 @@ public class Manager {
         System.out.println(manager.trainer1.toString() + "\n" + manager.trainer2.toString());
 
         Adventure adventure = new Adventure(manager.trainer1, manager.trainer2);
-        adventure.play();
+        System.out.println("Winner: " + adventure.play());
     }
 }

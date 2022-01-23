@@ -49,16 +49,23 @@ public class ArenaNeutrel extends ArenaEvent {
         return result;
     }
 
-    public void fight() {
-        if (neutrelFight(trainer1, pokemon1))
-            pokemon1.evolve();
+    public int fight() {
+        boolean result1 = neutrelFight(trainer1, pokemon1);
+        boolean result2 = neutrelFight(trainer2, pokemon2);
+        if (!result1 && !result2)
+            return -1;  // both lose
+        if (!result1)
+            return 2;   // trainer2 wins
+        if (!result2)
+            return 1;   // trainer1 wins
 
-        if (neutrelFight(trainer2, pokemon2))
-            pokemon2.evolve();
+        pokemon2.evolve();
+        pokemon1.evolve();
 
         System.out.println(pokemon1.toString());
         System.out.println(pokemon2.toString());
 //        System.out.println(trainer1.toString());
 //        System.out.println(trainer2.toString());
+        return 0;   // both trainers win
     }
 }
