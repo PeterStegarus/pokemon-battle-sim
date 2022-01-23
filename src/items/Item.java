@@ -17,6 +17,10 @@ public class Item {
         this.specialDefense = specialDefense;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public int getHp() {
         return hp;
     }

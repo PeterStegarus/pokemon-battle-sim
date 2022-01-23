@@ -4,26 +4,13 @@
     "age": 20,
     "pokemons": [
       {
-        "name": "Pikachu",
-        "items": [
-          "Scut",
-          "Sabiuta"
-        ]
+        "name": "Pikachu"
       },
       {
-        "name": "Bulbasaur",
-        "items": [
-          "Scut",
-          "Vesta"
-        ]
+        "name": "Bulbasaur"
       },
       {
-        "name": "Charmander",
-        "items": [
-          "Vesta",
-          "Scut",
-          "Sabiuta"
-        ]
+        "name": "Charmander"
       }
     ]
   },
@@ -32,24 +19,13 @@
     "age": 30,
     "pokemons": [
       {
-        "name": "Bulbasaur",
-        "items": [
-          "Sabiuta"
-        ]
+        "name": "Bulbasaur"
       },
       {
-        "name": "Charmander",
-        "items": [
-          "Scut",
-          "Scut"
-        ]
+        "name": "Charmander"
       },
       {
-        "name": "Pikachu",
-        "items": [
-          "Vesta",
-          "Sabiuta"
-        ]
+        "name": "Pikachu"
       }
     ]
   }

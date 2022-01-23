@@ -17,7 +17,6 @@ public class Manager {
 
     private class PokemonData {
         String name;
-        Set<String> items;  // items must be unique
     }
 
     private class TrainerData {
@@ -28,9 +27,6 @@ public class Manager {
 
     private Pokemon readPokemon(PokemonData p) {
         Pokemon pokemon = new PokemonFactory().make(p.name);
-        for (String item : p.items) {
-            pokemon.addItem(new ItemFactory().make(item));
-        }
         return pokemon;
     }
 
