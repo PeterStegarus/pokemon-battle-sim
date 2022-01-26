@@ -13,9 +13,9 @@ public class Adventure {
 
     public Adventure(Trainer trainer1, Trainer trainer2) {
         this.trainer1 = trainer1;
-        this.pokemon1 = trainer1.choosePokemon();
+        this.pokemon1 = trainer1.choosePokemon(1);
         this.trainer2 = trainer2;
-        this.pokemon2 = trainer2.choosePokemon();
+        this.pokemon2 = trainer2.choosePokemon(1);
         arenaEvents = new ArenaEvent[]{new ArenaDuel(trainer1, pokemon1, trainer2, pokemon2),
                 new ArenaNeutrel(1, trainer1, pokemon1, trainer2, pokemon2), new ArenaNeutrel(2, trainer1, pokemon1, trainer2, pokemon2)};
     }

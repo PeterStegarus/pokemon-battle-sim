@@ -1,7 +1,5 @@
 package game;
 
-import items.Item;
-import items.ItemFactory;
 import pokemons.Pokemon;
 
 import java.util.ArrayList;
@@ -35,35 +33,12 @@ public class Trainer {
         return name + " " + age + " " + Arrays.toString(pokemons);
     }
 
-    private Pokemon selectRandomPokemon() {
-        int random = new Random().nextInt(3);
-        return pokemons[random];
+    private Pokemon selectPokemon(int i) {
+        return pokemons[i];
     }
 
-    private ArrayList<Item> selectItems() {
-        ArrayList<Item> items = new ArrayList<>();
-        Item newItem;
-        ItemFactory itemFactory = ItemFactory.getInstance();
-        int random = new Random().nextInt(2) + 1;
-        while (items.size() < random) {
-            newItem = itemFactory.makeRandom();
-            boolean exists = false;
-            for (Item item : items) {
-                if (item.getName().equals(newItem.getName()))
-                    exists = true;
-            }
-            if (!exists) items.add(newItem);
-        }
-
-        System.out.println(items.toString());
-        return items;
-    }
-
-    public Pokemon choosePokemon() {
-        Pokemon pokemon = selectRandomPokemon();
-        ArrayList<Item> items = selectItems();
-        for (Item item : items)
-            pokemon.addItem(item);
+    public Pokemon choosePokemon(int i) {
+        Pokemon pokemon = selectPokemon(i);
         return pokemon;
     }
 

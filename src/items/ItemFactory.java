@@ -2,7 +2,6 @@ package items;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Random;
 
 public class ItemFactory {
     private static ItemFactory instance;
@@ -21,14 +20,6 @@ public class ItemFactory {
                 new BaghetaMagicaMaker(), new VitamineMaker(), new BradDeCraciunMaker(), new PelerinaMaker());
 
         return itemMakers.stream().filter(itemMaker -> itemMaker.is(item)).findFirst().orElse(null);
-    }
-
-    public Item makeRandom() {
-        ItemMaker[] itemMakers = {new ScutMaker(), new VestaMaker(), new SabiutaMaker(), new BaghetaMagicaMaker(),
-                new VitamineMaker(), new BradDeCraciunMaker(), new PelerinaMaker()};
-        int random = new Random().nextInt(itemMakers.length);
-
-        return itemMakers[random].make();
     }
 
     public Item make(String item) {   // factory pattern pentru ca makerul face un item nou
