@@ -2,14 +2,12 @@ import com.google.gson.*;
 import game.Adventure;
 import game.Game;
 import game.Trainer;
-import items.Item;
 import items.ItemFactory;
 import pokemons.Pokemon;
 import pokemons.PokemonFactory;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.util.Arrays;
 import java.util.Set;
 
 public class Manager {
@@ -72,6 +70,14 @@ public class Manager {
         }
 
         Game game = new Game(trainers);
+
+        for (int i = 0; i < 3; i++) {
+            Pokemon pokemon1 = trainers[0].choosePokemon(i);
+            Pokemon pokemon2 = trainers[1].choosePokemon(i);
+            game.takeAdventure(new Adventure(trainers[0], pokemon1, trainers[1], pokemon2));
+        }
+        game.takeAdventure(new Adventure(trainers[0], trainers[0].chooseBestPokemon(), trainers[1], trainers[1].chooseBestPokemon()));
+
         game.play();
     }
 }

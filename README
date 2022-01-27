@@ -1,4 +1,4 @@
-TODO: e oribila constructia pokemonilor, oare sa fac builder?
+
 
 
 trebuie sa aleg 4 tipuri de design patterns:
@@ -9,11 +9,9 @@ trebuie sa aleg 4 tipuri de design patterns:
     probabil niciuna, sa vad
 
 4. command
-    in duel, "fiecare pokemon aflat în bătălie va executa o comandă indicată de antrenor"
-    fac cate o comanda pt fiecare din cei 6 pokemoni si le dau executorului
-    stai asa ca aparent e 1v1, nu 3v3
-    si se pare ca amandoi lanseaza cate o comanda simultan
-    dar e vreun cooldown intre comenzi? stai ca cooldown nu e thread.sleep(secunde) cum credeam, e un numar de ture
+    client: manager
+    invoker: game
+    receiver: adventure
 
 5. decorator: FighterPokemon. Pentru ca nu avea rost sa las logica legata de lupta in Pokemon.
     Pokemonu e modelul, FighterPokemonu e controllerul lui

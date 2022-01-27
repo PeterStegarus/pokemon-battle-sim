@@ -52,10 +52,6 @@ public class FighterPokemon implements IPokemon {
         return stunned;
     }
 
-    public boolean canDodge() {
-        return canDodge;
-    }
-
     public boolean isDefeated() {
         return pokemon.getHp() <= 0;
     }

@@ -1,9 +1,6 @@
 package game;
 
-import items.Item;
 import pokemons.Ability;
-
-import java.util.Arrays;
 
 public interface IPokemon {
     String getName();

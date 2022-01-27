@@ -1,12 +1,10 @@
 package game;
 
-import pokemons.Pokemon;
-
 public abstract class ArenaEvent {
-    Trainer trainer1;
-    FighterPokemon pokemon1;
-    Trainer trainer2;
-    FighterPokemon pokemon2;
+    protected Trainer trainer1;
+    protected FighterPokemon pokemon1;
+    protected Trainer trainer2;
+    protected FighterPokemon pokemon2;
 
     public ArenaEvent(Trainer trainer1, FighterPokemon pokemon1, Trainer trainer2, FighterPokemon pokemon2) {
         this.trainer1 = trainer1;
