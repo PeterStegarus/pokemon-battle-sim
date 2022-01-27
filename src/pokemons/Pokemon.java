@@ -15,7 +15,7 @@ public class Pokemon implements IPokemon {
     private int specialDefense;
     private Ability[] abilities;
 
-    public Pokemon(String name, int hp, Integer attack, Integer specialAttack, int defense, int specialDefense) {
+    public Pokemon(String name, int hp, Integer attack, Integer specialAttack, int defense, int specialDefense, Ability[] abilities) {
         this.name = name;
         this.baseHp = hp;
         this.hp = hp;
@@ -23,6 +23,7 @@ public class Pokemon implements IPokemon {
         this.specialAttack = specialAttack;
         this.defense = defense;
         this.specialDefense = specialDefense;
+        this.abilities = abilities;
     }
 
     public String getName() {

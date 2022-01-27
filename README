@@ -1,3 +1,6 @@
+TODO: e oribila constructia pokemonilor, oare sa fac builder?
+
+
 trebuie sa aleg 4 tipuri de design patterns:
 
 1&2&3. ??strategy?? filter? factory?
@@ -14,8 +17,6 @@ trebuie sa aleg 4 tipuri de design patterns:
 
 5. decorator: FighterPokemon. Pentru ca nu avea rost sa las logica legata de lupta in Pokemon.
     Pokemonu e modelul, FighterPokemonu e controllerul lui
-
-
 
 
 
