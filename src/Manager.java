@@ -1,19 +1,19 @@
 import com.google.gson.*;
 import game.Adventure;
+import game.Game;
 import game.Trainer;
 import items.Item;
 import items.ItemFactory;
 import pokemons.Pokemon;
 import pokemons.PokemonFactory;
 
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.Arrays;
 import java.util.Set;
 
 public class Manager {
     private Gson gson = new Gson();
-    private Trainer trainer1;
-    private Trainer trainer2;
 
     private class PokemonData {
         String name;
@@ -43,23 +43,35 @@ public class Manager {
         return new Trainer(t.name, t.age, pokemons);
     }
 
-    private void readTrainers(String filePath) {
-        try {
-            TrainerData[] trainers = gson.fromJson(new FileReader(filePath), TrainerData[].class);
-            trainer1 = readTrainer(trainers[0]);
-            trainer2 = readTrainer(trainers[1]);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+    private Trainer[] readTrainers(String filePath) throws FileNotFoundException, com.google.gson.JsonParseException, IllegalArgumentException {
+        Trainer trainer1 = null;
+        Trainer trainer2 = null;
+
+        TrainerData[] trainers = gson.fromJson(new FileReader(filePath), TrainerData[].class);
+        trainer1 = readTrainer(trainers[0]);
+        trainer2 = readTrainer(trainers[1]);
+
+        if (trainer1 == null || trainer2 == null)
+            throw new IllegalArgumentException();
+
+        return new Trainer[]{trainer1, trainer2};
     }
 
     public static void main(String[] args) {
+        String inputFile = "test1.json";
         Manager manager = new Manager();
-        manager.readTrainers("test1.json");
+        Trainer[] trainers = new Trainer[0];
+        try {
+            trainers = manager.readTrainers(inputFile);
+        } catch (FileNotFoundException e) {
+            System.out.println("Input file doesn't exist, try again with new input file.");
+        } catch (com.google.gson.JsonParseException e) {
+            System.out.println("Input file may be corrupt. Make sure it's a valid JSON format.");
+        } catch (IllegalArgumentException e) {
+            System.out.println("Input file might not be in the correct format. Two trainers are needed.");
+        }
 
-        System.out.println(manager.trainer1.toString() + "\n" + manager.trainer2.toString());
-
-        Adventure adventure = new Adventure(manager.trainer1, manager.trainer2);
-        System.out.println("Winner: " + adventure.play());
+        Game game = new Game(trainers);
+        game.play();
     }
 }

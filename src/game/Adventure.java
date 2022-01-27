@@ -11,13 +11,14 @@ public class Adventure {
     private Trainer trainer2;
     private FighterPokemon pokemon2;
 
-    public Adventure(Trainer trainer1, Trainer trainer2) {
+    public Adventure(Trainer trainer1, Pokemon pokemon1, Trainer trainer2, Pokemon pokemon2) {
         this.trainer1 = trainer1;
-        this.pokemon1 = new FighterPokemon(trainer1.choosePokemon(1));
+        this.pokemon1 = new FighterPokemon(pokemon1);
         this.trainer2 = trainer2;
-        this.pokemon2 = new FighterPokemon(trainer2.choosePokemon(1));
-        arenaEvents = new ArenaEvent[]{new ArenaDuel(trainer1, pokemon1, trainer2, pokemon2),
-                new ArenaNeutrel(1, trainer1, pokemon1, trainer2, pokemon2), new ArenaNeutrel(2, trainer1, pokemon1, trainer2, pokemon2)};
+        this.pokemon2 = new FighterPokemon(pokemon1);
+        arenaEvents = new ArenaEvent[]{new ArenaDuel(trainer1, this.pokemon1, trainer2, this.pokemon2),
+                new ArenaNeutrel(1, trainer1, this.pokemon1, trainer2, this.pokemon2),
+                new ArenaNeutrel(2, trainer1, this.pokemon1, trainer2, this.pokemon2)};
     }
 
     private ArenaEvent selectRandomEvent() {
@@ -43,5 +44,9 @@ public class Adventure {
                 return end(result);
             }
         }
+    }
+
+    public String toString() {
+        return trainer1.getName() + " & " + pokemon1.getName() + " vs " + trainer2.getName() + " & " + pokemon2.getName();
     }
 }

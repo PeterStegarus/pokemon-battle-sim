@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 
-public class Trainer {
-    private String name;
+public class Trainer implements FighterPokemonController {
+    private final String name;
     private int age;
     private Pokemon[] pokemons;
 
@@ -21,25 +21,12 @@ public class Trainer {
         return name;
     }
 
-    public int getAge() {
-        return age;
-    }
-
-    public Pokemon[] getPokemons() {
-        return pokemons;
-    }
-
     public String toString() {
         return name + " " + age + " " + Arrays.toString(pokemons);
     }
 
-    private Pokemon selectPokemon(int i) {
-        return pokemons[i];
-    }
-
     public Pokemon choosePokemon(int i) {
-        Pokemon pokemon = selectPokemon(i);
-        return pokemon;
+        return pokemons[i];
     }
 
     private FightCommand generateRandomCommand(FighterPokemon attacker, FighterPokemon target) {
@@ -56,5 +43,18 @@ public class Trainer {
 
     public FightCommand giveCommand(FighterPokemon friend, FighterPokemon enemy) {
         return generateRandomCommand(friend, enemy);
+    }
+
+    // best: highest level. if equal level, lowest lexicographically
+    public Pokemon chooseBestPokemon() {
+        Pokemon bestPokemon = pokemons[0];
+        for (int i = 1; i < pokemons.length; i++) {
+            if (pokemons[i].getLevel() > bestPokemon.getLevel()) {
+                if (pokemons[i].getName().compareTo(bestPokemon.getName()) < 0)
+                    bestPokemon = pokemons[i];
+            }
+        }
+
+        return bestPokemon;
     }
 }

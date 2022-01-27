@@ -137,4 +137,8 @@ public class FighterPokemon implements IPokemon {
     public void evolve() {
         pokemon.evolve();
     }
+
+    public String toString() {
+        return pokemon.toString();
+    }
 }

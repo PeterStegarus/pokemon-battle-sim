@@ -83,6 +83,11 @@ public class Pokemon implements IPokemon {
         addItem(new Item("_", 1, 1, 1, 1, 1));
     }
 
+    public int getLevel() {
+        int att = attack != null ? attack : specialAttack;
+        return baseHp + att + defense + specialDefense;
+    }
+
     public String toString() {
         return name + " " + hp + " " + attack + " " + specialAttack + " " + defense + " " + specialDefense + " " + Arrays.toString(abilities);
     }
