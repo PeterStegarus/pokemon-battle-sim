@@ -4,20 +4,33 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
 
-public interface Logger {
+public class Logger {
+    private static ILogger logger = null;
+
+    public static void init(ILogger logger) {
+        Logger.logger = logger;
+    }
+
+    public static void log(String message) {
+        if (logger != null)
+            logger.log(message);
+    }
+}
+
+interface ILogger {
     void log(String message);
 }
 
-class ConsoleLogger implements Logger {
+class ConsoleLogger implements ILogger {
     @Override
     public void log(String message) {
         System.out.println(message);
     }
 }
 
-class FileLogger implements Logger {
+class FileLogger implements ILogger {
     private Path path;
-    private Logger logger = null;
+    private ILogger logger = null;
 
     public FileLogger(Path path) {
         this.path = path;
@@ -32,7 +45,7 @@ class FileLogger implements Logger {
         }
     }
 
-    public FileLogger(Path path, Logger logger) {
+    public FileLogger(Path path, ILogger logger) {
         this(path);
         this.logger = logger;
     }
@@ -46,5 +59,4 @@ class FileLogger implements Logger {
             e.printStackTrace();
         }
     }
-
 }

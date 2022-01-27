@@ -13,5 +13,9 @@ public abstract class ArenaEvent {
         this.pokemon2 = pokemon2;
     }
 
+    public void logFighters() {
+
+    }
+
     public abstract int fight();
 }
