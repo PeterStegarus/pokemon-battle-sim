@@ -12,7 +12,8 @@ trebuie sa aleg 4 tipuri de design patterns:
     si se pare ca amandoi lanseaza cate o comanda simultan
     dar e vreun cooldown intre comenzi? stai ca cooldown nu e thread.sleep(secunde) cum credeam, e un numar de ture
 
-
+5. decorator: FighterPokemon. Pentru ca nu avea rost sa las logica legata de lupta in Pokemon.
+    Pokemonu e modelul, FighterPokemonu e controllerul lui
 
 
 

@@ -1,17 +1,15 @@
 package game;
 
-import pokemons.Pokemon;
-
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 public class ArenaDuel extends ArenaEvent {
-    public ArenaDuel(Trainer trainer1, Pokemon pokemon1, Trainer trainer2, Pokemon pokemon2) {
+    public ArenaDuel(Trainer trainer1, FighterPokemon pokemon1, Trainer trainer2, FighterPokemon pokemon2) {
         super(trainer1, pokemon1, trainer2, pokemon2);
     }
 
-    private void execTurn(Trainer trainer1, Pokemon pokemon1, Trainer trainer2, Pokemon pokemon2, int i) {
+    private void execTurn(Trainer trainer1, FighterPokemon pokemon1, Trainer FighterPokemon, FighterPokemon pokemon2, int i) {
         ExecutorService executor = Executors.newFixedThreadPool(2);
         executor.execute(trainer1.giveCommand(pokemon1, pokemon2));
         executor.execute(trainer2.giveCommand(pokemon2, pokemon1));
@@ -30,7 +28,7 @@ public class ArenaDuel extends ArenaEvent {
     }
 
     // returns true if neutrel loses, false otherwise
-    private int duel(Trainer trainer1, Pokemon pokemon1, Trainer trainer2, Pokemon pokemon2) {
+    private int duel(Trainer trainer1, FighterPokemon pokemon1, Trainer trainer2, FighterPokemon pokemon2) {
         System.out.println("------------------\n" + trainer1.getName() + ": " + pokemon1.toString());
         System.out.println("vs");
         System.out.println(trainer2.getName() + ": " + pokemon2.toString());

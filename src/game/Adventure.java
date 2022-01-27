@@ -7,15 +7,15 @@ import java.util.Random;
 public class Adventure {
     private ArenaEvent[] arenaEvents;
     private Trainer trainer1;
-    private Pokemon pokemon1;
+    private FighterPokemon pokemon1;
     private Trainer trainer2;
-    private Pokemon pokemon2;
+    private FighterPokemon pokemon2;
 
     public Adventure(Trainer trainer1, Trainer trainer2) {
         this.trainer1 = trainer1;
-        this.pokemon1 = trainer1.choosePokemon(1);
+        this.pokemon1 = new FighterPokemon(trainer1.choosePokemon(1));
         this.trainer2 = trainer2;
-        this.pokemon2 = trainer2.choosePokemon(1);
+        this.pokemon2 = new FighterPokemon(trainer2.choosePokemon(1));
         arenaEvents = new ArenaEvent[]{new ArenaDuel(trainer1, pokemon1, trainer2, pokemon2),
                 new ArenaNeutrel(1, trainer1, pokemon1, trainer2, pokemon2), new ArenaNeutrel(2, trainer1, pokemon1, trainer2, pokemon2)};
     }

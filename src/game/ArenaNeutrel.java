@@ -1,6 +1,5 @@
 package game;
 
-import pokemons.Pokemon;
 import pokemons.PokemonFactory;
 
 import java.util.concurrent.ExecutorService;
@@ -8,16 +7,16 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 public class ArenaNeutrel extends ArenaEvent {
-    private Pokemon neutrel;
+    private FighterPokemon neutrel;
 
-    public ArenaNeutrel(int neutrel, Trainer trainer1, Pokemon pokemon1, Trainer trainer2, Pokemon pokemon2) {
+    public ArenaNeutrel(int neutrel, Trainer trainer1, FighterPokemon pokemon1, Trainer trainer2, FighterPokemon pokemon2) {
         super(trainer1, pokemon1, trainer2, pokemon2);
-        this.neutrel = PokemonFactory.getInstance().make("Neutrel" + neutrel);
+        this.neutrel = new FighterPokemon(PokemonFactory.getInstance().make("Neutrel" + neutrel));
     }
 
-    private void execTurn(Trainer trainer, Pokemon pokemon, int i) {
+    private void execTurn(Trainer trainer, FighterPokemon pokemon, int i) {
         ExecutorService executor = Executors.newFixedThreadPool(2);
-        executor.execute(new AttackCommand(neutrel, pokemon));
+        executor.execute(new AttackFightCommand(neutrel, pokemon));
         executor.execute(trainer.giveCommand(pokemon, neutrel));
         executor.shutdown();
 
@@ -34,7 +33,7 @@ public class ArenaNeutrel extends ArenaEvent {
     }
 
     // returns true if neutrel loses, false otherwise
-    private boolean neutrelFight(Trainer trainer, Pokemon pokemon) {
+    private boolean neutrelFight(Trainer trainer, FighterPokemon pokemon) {
         System.out.println("lupta " + trainer.getName() + " cu " + pokemon.toString() + " impotriva " + neutrel.toString());
         int i = 0;
 

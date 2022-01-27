@@ -42,19 +42,19 @@ public class Trainer {
         return pokemon;
     }
 
-    private Command generateRandomCommand(Pokemon attacker, Pokemon target) {
-        ArrayList<Command> possibleCommands = new ArrayList<>();
-        possibleCommands.add(new AttackCommand(attacker, target));
+    private FightCommand generateRandomCommand(FighterPokemon attacker, FighterPokemon target) {
+        ArrayList<FightCommand> possibleFightCommands = new ArrayList<>();
+        possibleFightCommands.add(new AttackFightCommand(attacker, target));
         for (int i = 0; i < attacker.getAbilities().length; i++) {
             if (attacker.getAbilities()[i].getCooldown() == 0)
-                possibleCommands.add(new AbilityCommand(attacker, target, i));
+                possibleFightCommands.add(new AbilityFightCommand(attacker, target, i));
         }
 
-        int random = new Random().nextInt(possibleCommands.size());
-        return possibleCommands.get(random);
+        int random = new Random().nextInt(possibleFightCommands.size());
+        return possibleFightCommands.get(random);
     }
 
-    public Command giveCommand(Pokemon friend, Pokemon enemy) {
+    public FightCommand giveCommand(FighterPokemon friend, FighterPokemon enemy) {
         return generateRandomCommand(friend, enemy);
     }
 }

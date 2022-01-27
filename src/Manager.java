@@ -35,11 +35,11 @@ public class Manager {
     }
 
     private Trainer readTrainer(TrainerData t) {
-        Pokemon pokemon1 = readPokemon(t.pokemons[0]);
-        Pokemon pokemon2 = readPokemon(t.pokemons[1]);
-        Pokemon pokemon3 = readPokemon(t.pokemons[2]);
+        Pokemon[] pokemons = new Pokemon[3];
+        for (int i = 0; i < 3; i++) {
+            pokemons[i] = readPokemon(t.pokemons[0]);
+        }
 
-        Pokemon[] pokemons = new Pokemon[]{pokemon1, pokemon2, pokemon3};
         return new Trainer(t.name, t.age, pokemons);
     }
 

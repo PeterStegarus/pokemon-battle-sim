@@ -1,27 +1,26 @@
 package game;
 
 import pokemons.Ability;
-import pokemons.Pokemon;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-public abstract class Command implements Runnable {
-    protected final Pokemon attacker;
-    protected final Pokemon target;
+public abstract class FightCommand implements Runnable {
+    protected final FighterPokemon attacker;
+    protected final FighterPokemon target;
     protected static Lock lock = new ReentrantLock();
     protected static Condition startedTurn = lock.newCondition();
     protected static Condition endedTurn = lock.newCondition();
 
-    public Command(Pokemon attacker, Pokemon target) {
+    public FightCommand(FighterPokemon attacker, FighterPokemon target) {
         this.attacker = attacker;
         this.target = target;
     }
 }
 
-class AttackCommand extends Command {
-    public AttackCommand(Pokemon attacker, Pokemon target) {
+class AttackFightCommand extends FightCommand {
+    public AttackFightCommand(FighterPokemon attacker, FighterPokemon target) {
         super(attacker, target);
     }
 
@@ -75,10 +74,10 @@ class AttackCommand extends Command {
     }
 }
 
-class AbilityCommand extends Command {
+class AbilityFightCommand extends FightCommand {
     Ability ability;
 
-    public AbilityCommand(Pokemon attacker, Pokemon target, int ability) {
+    public AbilityFightCommand(FighterPokemon attacker, FighterPokemon target, int ability) {
         super(attacker, target);
         this.ability = attacker.getAbilities()[ability];
     }
