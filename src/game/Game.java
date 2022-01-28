@@ -1,6 +1,6 @@
 package game;
 
-import pokemons.Pokemon;
+import logger.Logger;
 
 import java.util.ArrayList;
 
@@ -19,10 +19,8 @@ public class Game {
     }
 
     public void play() {
-        System.out.println(trainer1.toString() + "\n" + trainer2.toString());
-
         for (Adventure adventure : adventures) {
-            System.out.println("Winner of " + adventure.toString() + ":" + adventure.play());
+            Logger.log("Winner of " + adventure.toString() + ":" + adventure.play() + "\n");
         }
     }
 }

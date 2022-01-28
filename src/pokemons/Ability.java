@@ -45,6 +45,8 @@ public class Ability {
     }
 
     public String toString() {
-        return damage + " " + stun + " " + dodge + " " + cooldown;
+        String stunStr = stun ? "Stun " : "";
+        String dodgeStr = dodge ? "Dodge " : "";
+        return "Damage: " + damage + " " + stunStr + dodgeStr + "Cooldown: " + cooldown;
     }
 }

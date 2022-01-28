@@ -3,7 +3,6 @@ package game;
 import pokemons.Pokemon;
 
 import java.util.ArrayList;
-import java.util.Random;
 
 public class Adventure {
     private ArrayList<ArenaEvent> arenaEvents = new ArrayList<>();

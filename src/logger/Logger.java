@@ -1,3 +1,5 @@
+package logger;
+
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -24,7 +26,7 @@ interface ILogger {
 class ConsoleLogger implements ILogger {
     @Override
     public void log(String message) {
-        System.out.println(message);
+        System.out.print(message);
     }
 }
 

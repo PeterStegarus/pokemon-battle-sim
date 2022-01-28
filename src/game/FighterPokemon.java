@@ -1,7 +1,7 @@
 package game;
 
-import items.Item;
 import pokemons.Ability;
+import pokemons.IPokemon;
 import pokemons.Pokemon;
 
 public class FighterPokemon implements IPokemon {
@@ -58,36 +58,34 @@ public class FighterPokemon implements IPokemon {
 
     public void stun() {
         if (canDodge) {
-            System.out.println(pokemon.getName() + " dodged the stun ability!");
             return;
         }
         stunned = true;
     }
 
-    public void sufferAttack(int damage) {
+    public boolean sufferAttack(int damage) {
         if (canDodge || damage < pokemon.getDefense()) {
-//            System.out.println(this.name + " dodged!");
-            return;
+            return false;
         }
         pokemon.sufferDamage(damage - pokemon.getDefense());
+        return true;
     }
 
-    public void sufferSpecialAttack(int damage) {
+    public boolean sufferSpecialAttack(int damage) {
         if (canDodge || damage < pokemon.getSpecialDefense()) {
-//            System.out.println(this.name + " dodged!");
-            return;
+            return false;
         }
         pokemon.sufferDamage(damage - pokemon.getSpecialDefense());
+        return true;
     }
 
-    public void sufferAbilityDamage(int damage) {
+    public boolean sufferAbilityDamage(int damage) {
         if (canDodge) {
-//            System.out.println(this.name + " dodged!");
-            return;
+            return false;
         }
         pokemon.sufferDamage(damage);
+        return true;
     }
-
 
     @Override
     public String getName() {

@@ -1,6 +1,5 @@
 package pokemons;
 
-import game.IPokemon;
 import items.Item;
 
 import java.util.Arrays;
@@ -89,6 +88,7 @@ public class Pokemon implements IPokemon {
     }
 
     public String toString() {
-        return name + " " + hp + " " + attack + " " + specialAttack + " " + defense + " " + specialDefense + " " + Arrays.toString(abilities);
+//        int att = attack != null ? attack : specialAttack;
+        return name + ": (HP: " + hp + ") (Attack: " + attack + ") (Special attack: " + specialAttack + ") (Defense: " + defense + ") (Special defense: " + specialDefense + ") (Abilities: " + Arrays.toString(abilities) + ")";
     }
 }
