@@ -4,8 +4,10 @@ import logger.Logger;
 import pokemons.IPokemon;
 import pokemons.PokemonFactory;
 
+import java.util.Arrays;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 public class ArenaNeutrel extends ArenaEvent {
     private FighterPokemon neutrel;
@@ -21,12 +23,21 @@ public class ArenaNeutrel extends ArenaEvent {
 
     private void execTurn(Trainer trainer, FighterPokemon pokemon, int i) {
         Logger.log("[Turn " + i + "]: {" + pokemon.getName() + ": (HP" + pokemon.getHp() + ") (Abilities: " +
-                pokemon.getAbilities() + ")} {" + neutrel.getName() + " (HP" + neutrel.getHp() + ")}\n");
+                Arrays.toString(pokemon1.getAbilities()) + ")} VS {" + neutrel.getName() + " (HP" + neutrel.getHp() + ")}\n");
 
         ExecutorService executor = Executors.newFixedThreadPool(2);
         executor.execute(new AttackFightCommand(neutrel, pokemon));
         executor.execute(trainer.giveCommand(pokemon, neutrel));
         executor.shutdown();
+
+        try {
+            if (!executor.awaitTermination(10, TimeUnit.SECONDS)) {
+                Logger.log("Duel was interrupted");
+                System.exit(0);
+            }
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     // returns true if neutrel loses, false otherwise
@@ -45,7 +56,6 @@ public class ArenaNeutrel extends ArenaEvent {
     }
 
     public int fight() {
-        lock.lock();
         logFighters(trainer1, pokemon1);
         boolean result1 = neutrelFight(trainer1, pokemon1);
         logFighters(trainer2, pokemon2);
@@ -59,7 +69,6 @@ public class ArenaNeutrel extends ArenaEvent {
 
         pokemon2.evolve();
         pokemon1.evolve();
-        lock.unlock();
         return 0;   // both trainers win
     }
 }

@@ -15,7 +15,7 @@ public class Adventure {
         this.trainer1 = trainer1;
         this.pokemon1 = new FighterPokemon(pokemon1);
         this.trainer2 = trainer2;
-        this.pokemon2 = new FighterPokemon(pokemon1);
+        this.pokemon2 = new FighterPokemon(pokemon2);
     }
 
     private String end(int result) {

@@ -3,11 +3,15 @@ import game.Adventure;
 import game.Game;
 import game.Trainer;
 import items.ItemFactory;
+import logger.ConsoleLogger;
+import logger.FileLogger;
+import logger.Logger;
 import pokemons.Pokemon;
 import pokemons.PokemonFactory;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.nio.file.Path;
 import java.util.Set;
 
 public class Manager {
@@ -57,6 +61,8 @@ public class Manager {
 
     public static void main(String[] args) {
         String inputFile = "test1.json";
+        String outputFile = "test1.out";
+        Logger.init(new FileLogger(Path.of(outputFile), new ConsoleLogger()));
         Manager manager = new Manager();
         Trainer[] trainers = new Trainer[0];
         try {

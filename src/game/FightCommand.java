@@ -1,5 +1,6 @@
 package game;
 
+import logger.Logger;
 import pokemons.Ability;
 
 import java.util.concurrent.locks.Condition;
@@ -26,13 +27,12 @@ class AttackFightCommand extends FightCommand {
 
     @Override
     public void run() {
-        System.out.println("<attack> " + attacker.getName() + " attacks " + target.getName());
-        // intai, initializeaza lupta: veririca stunurile si redu cooldownurile la amandoi
+        // intai, initializeaza lupta: verifica stunurile si redu cooldownurile la amandoi
         lock.lock();
         boolean skip = attacker.isStunned();
         attacker.startTurn();
         if (skip) {
-            System.out.println(attacker.getName() + " is stunned, skip!");
+            Logger.log("\t" + attacker.getName() + " is stunned!\n");
         }
 
         // ambii pokemoni trebuie sa fi trecut prin etapa de inceperea turului
@@ -46,12 +46,14 @@ class AttackFightCommand extends FightCommand {
         startedTurn.signal();
 
         if (!skip) {
-            System.out.println("\t1" + attacker.getName() + " started turn");
+            boolean result;
             if (attacker.getAttack() != null) {
-                target.sufferAttack(attacker.getAttack());
+                result = target.sufferAttack(attacker.getAttack());
             } else {
-                target.sufferSpecialAttack(attacker.getSpecialAttack());
+                result = target.sufferSpecialAttack(attacker.getSpecialAttack());
             }
+            String message = result ? "It was effective!\n" : "It wasn't efective.\n";
+            Logger.log("\t" + attacker.getName() + " uses attack. " + message);
         }
 
         // trebuie sa termine amandoi
@@ -68,8 +70,6 @@ class AttackFightCommand extends FightCommand {
         }
         endedTurn.signal();
         attacker.endTurn();
-        if (!skip)
-            System.out.println("\t3" + attacker.getName() + " ended turn");
         lock.unlock();
     }
 }
@@ -84,17 +84,15 @@ class AbilityFightCommand extends FightCommand {
 
     @Override
     public void run() {
-        System.out.println("<ability " + this.ability.toString() + "> " + attacker.getName() + " attacks " + target.getName());
         // intai, initializeaza lupta: veririca stunurile si redu cooldownurile la amandoi
         lock.lock();
         boolean skip = attacker.isStunned();
         attacker.startTurn();
         if (skip) {
-            System.out.println(attacker.getName() + " is stunned, skip!");
+            Logger.log(attacker.getName() + " is stunned.\n");
         } else {
             // dodge-ul trebuie setat dinaintea turei pentru ca este valabil doar pentru tura curenta
             if (ability.isDodge()) {
-                System.out.println("\t" + attacker.getName() + " uses dodge ability!");
                 attacker.willDodge();
             }
         }
@@ -110,9 +108,10 @@ class AbilityFightCommand extends FightCommand {
         startedTurn.signal();
 
         if (!skip) {
-            System.out.println("\t1" + attacker.getName() + " started turn");
             // dupa ce sunt amandoi pregatiti pentru o tura noua, doar aplica damage-ul abilitatii (daca e cazul, de dodge se ocupa cel atacat)
-            target.sufferAbilityDamage(ability.getDamage());
+            boolean result = target.sufferAbilityDamage(ability.getDamage());
+            String message = result ? "It was effective!\n" : "It wasn't efective.\n";
+            Logger.log("\t" + attacker.getName() + " uses ability [" + ability.toString() + "]. " + message);
         }
 
         // trebuie sa termine amandoi
@@ -131,7 +130,6 @@ class AbilityFightCommand extends FightCommand {
         attacker.endTurn();
 
         if (!skip) {
-            System.out.println("\t3" + attacker.getName() + " ended turn");
             // dupa ce s-a terminat tura, aplic stun-ul care va fi valabil pentru tura urmatoare
             if (ability.isStun())
                 target.stun();
