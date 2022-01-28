@@ -1,5 +1,6 @@
 package game;
 
+import logger.Logger;
 import pokemons.Pokemon;
 
 import java.util.ArrayList;
@@ -20,10 +21,10 @@ public class Adventure {
 
     private String end(int result) {
         if (result == -1)
-            return "Draw";
+            return "Draw.";
         if (result == 1)
-            return trainer1.getName();
-        return trainer2.getName();
+            return pokemon1.toString() + " wins!";
+        return pokemon2.toString() + " wins!";
     }
 
     private void setupEvents() {
@@ -35,6 +36,7 @@ public class Adventure {
     }
 
     public String play() {
+        Logger.log("Start of new " + this + "\n");
         setupEvents();
 
         int result = 0;
@@ -48,6 +50,6 @@ public class Adventure {
     }
 
     public String toString() {
-        return trainer1.getName() + " vs " + trainer2.getName();
+        return "Adventure: " + trainer1.getName() + "'s " + pokemon1.getName() + " vs " + trainer2.getName() + "'s " + pokemon2.getName();
     }
 }

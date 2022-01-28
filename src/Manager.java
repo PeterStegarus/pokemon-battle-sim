@@ -39,7 +39,7 @@ public class Manager {
     private Trainer readTrainer(TrainerData t) {
         Pokemon[] pokemons = new Pokemon[3];
         for (int i = 0; i < 3; i++) {
-            pokemons[i] = readPokemon(t.pokemons[0]);
+            pokemons[i] = readPokemon(t.pokemons[i]);
         }
 
         return new Trainer(t.name, t.age, pokemons);

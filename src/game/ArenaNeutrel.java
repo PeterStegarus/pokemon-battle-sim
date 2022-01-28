@@ -18,7 +18,7 @@ public class ArenaNeutrel extends ArenaEvent {
     }
 
     public void logFighters(Trainer trainer, IPokemon pokemon) {
-        Logger.log(String.format("Arena Fight: %s vs %s. Fight!\n", trainer.getName(), pokemon.toString(), neutrel.toString()));
+        Logger.log(String.format("Arena Fight: %s's %s VS %s. Fight!\n", trainer.getName(), pokemon.toString(), neutrel.toString()));
     }
 
     private void execTurn(Trainer trainer, FighterPokemon pokemon, int i) {
@@ -69,6 +69,7 @@ public class ArenaNeutrel extends ArenaEvent {
 
         pokemon2.evolve();
         pokemon1.evolve();
+        System.out.println("Both Pokemons beat Neutrel. Evolve!\n\tEvolved: " + pokemon1.toString() + "\n\tEvolved: " + pokemon2.toString());
         return 0;   // both trainers win
     }
 }

@@ -1,5 +1,6 @@
 package game;
 
+import logger.Logger;
 import pokemons.Pokemon;
 
 import java.util.ArrayList;

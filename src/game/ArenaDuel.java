@@ -13,7 +13,7 @@ public class ArenaDuel extends ArenaEvent {
     }
 
     public void logFighters() {
-        Logger.log(String.format("Arena Duel: %s vs %s. Fight!\n", trainer1.getName(),
+        Logger.log(String.format("Arena Duel: %s's %s VS %s's %s. Fight!\n", trainer1.getName(),
                 pokemon1.toString(), trainer2.getName(), pokemon2.toString()));
     }
 

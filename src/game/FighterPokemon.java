@@ -99,6 +99,10 @@ public class FighterPokemon implements IPokemon {
 
     @Override
     public void reset() {
+        stunned = false;
+        canDodge = false;
+        fighting = false;
+        finished = false;
         pokemon.reset();
     }
 

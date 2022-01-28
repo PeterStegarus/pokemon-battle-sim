@@ -20,7 +20,7 @@ public class Game {
 
     public void play() {
         for (Adventure adventure : adventures) {
-            Logger.log("Winner of " + adventure.toString() + ":" + adventure.play() + "\n");
+            Logger.log("Result of " + adventure.toString() + ": " + adventure.play() + "\n\n");
         }
     }
 }
