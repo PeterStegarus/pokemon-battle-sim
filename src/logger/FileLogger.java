@@ -10,20 +10,22 @@ public class FileLogger implements ILogger {
     private Path path;
     private ILogger logger = null;
 
-    public FileLogger(Path path) {
-        this.path = path;
+    public FileLogger(String path) {
+        this.path = Path.of("log/" + path);
 
         try {
-            if (Files.exists(path))
-                Files.delete(path);
-            Files.createFile(path);
+            if (!Files.exists(Path.of("log")))
+                Files.createDirectory(Path.of("log"));
+            if (Files.exists(this.path))
+                Files.delete(this.path);
+            Files.createFile(this.path);
         } catch (Exception e) {
             System.out.println("Could not create log file");
             e.printStackTrace();
         }
     }
 
-    public FileLogger(Path path, ILogger logger) {
+    public FileLogger(String path, ILogger logger) {
         this(path);
         this.logger = logger;
     }

@@ -69,7 +69,7 @@ public class ArenaNeutrel extends ArenaEvent {
 
         pokemon2.evolve();
         pokemon1.evolve();
-        System.out.println("Both Pokemons beat Neutrel. Evolve!\n\tEvolved: " + pokemon1.toString() + "\n\tEvolved: " + pokemon2.toString());
+        Logger.log("Both Pokemons beat Neutrel. Evolve!\n\tEvolved: " + pokemon1.toString() + "\n\tEvolved: " + pokemon2.toString());
         return 0;   // both trainers win
     }
 }
