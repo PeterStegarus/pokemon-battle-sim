@@ -9,15 +9,11 @@ trebuie sa aleg 4 tipuri de design patterns:
     probabil niciuna, sa vad
 
 4. command
-    client: manager
-    invoker: game
-    receiver: adventure
-
 fight command:
     client: arena event
     invoker: trainer
-    receiver: pokemons
     command: (Ability|Attack)FightCommand
+    receiver: pokemons
 
 5. decorator
 FighterPokemon:

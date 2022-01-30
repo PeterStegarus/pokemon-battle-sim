@@ -1,5 +1,4 @@
 import com.google.gson.*;
-import game.Adventure;
 import game.Game;
 import game.Trainer;
 import items.ItemFactory;
@@ -12,10 +11,13 @@ import pokemons.PokemonFactory;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.util.Scanner;
 import java.util.Set;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Manager {
-    private Gson gson = new Gson();
+    private final Gson gson = new Gson();
 
     private static class InputData {
         String logger;
@@ -50,31 +52,45 @@ public class Manager {
         return new Trainer(t.name, t.age, pokemons);
     }
 
-    private Trainer[] readTrainers(String filePath) throws FileNotFoundException, com.google.gson.JsonParseException, IllegalArgumentException {
-        Trainer trainer1 = null;
-        Trainer trainer2 = null;
+    // first read the json as is, then build the trainers and pokemons
+    private Trainer[] readTrainers(String filePath) throws FileNotFoundException, com.google.gson.JsonParseException {
+        Trainer trainer1;
+        Trainer trainer2;
 
         InputData inputData = gson.fromJson(new FileReader(filePath), InputData.class);
         TrainerData[] trainers = inputData.trainers;
         trainer1 = readTrainer(trainers[0]);
         trainer2 = readTrainer(trainers[1]);
 
-        if (trainer1 == null || trainer2 == null)
-            throw new IllegalArgumentException();
-
         return new Trainer[]{trainer1, trainer2};
     }
 
-    private String readLoggerType(String filePath) throws FileNotFoundException, com.google.gson.JsonParseException, IllegalArgumentException {
+    private String readLoggerType(String filePath) throws FileNotFoundException, com.google.gson.JsonParseException {
         InputData inputData = gson.fromJson(new FileReader(filePath), InputData.class);
         return inputData.logger;
     }
 
+    private int getInputFile() {
+        Scanner scanner = new Scanner(System.in);
+        int inputFileNo = -1;
+        while (!(0 < inputFileNo && inputFileNo < 11)) {
+            System.out.println("Enter test number: (1..10)");
+            inputFileNo = scanner.nextInt();
+        }
+        return inputFileNo;
+    }
+
+    private String getOutputFile(String inputFile) {
+        Matcher matcher = Pattern.compile("(?<=input/)(.*)(?=.json)").matcher(inputFile);
+        matcher.find();
+        return matcher.group() + ".log";
+    }
+
     public static void main(String[] args) {
-        String inputFile = "test1.json";
-        String outputFile = inputFile.split(".json")[0] + ".log";
-        String loggerType = "";
         Manager manager = new Manager();
+        String inputFile = "input/test" + manager.getInputFile() + ".json";
+        String outputFile = manager.getOutputFile(inputFile);
+        String loggerType = "";
         Trainer[] trainers = new Trainer[0];
 
         // read logger type and trainers
@@ -85,8 +101,6 @@ public class Manager {
             System.out.println("Input file doesn't exist, try again with new input file.");
         } catch (com.google.gson.JsonParseException e) {
             System.out.println("Input file may be corrupt. Make sure it's a valid JSON format.");
-        } catch (IllegalArgumentException e) {
-            System.out.println("Input file might not be in the correct format. Two trainers are needed.");
         }
 
         // init logger
@@ -100,13 +114,6 @@ public class Manager {
 
         // game setup
         Game game = new Game(trainers);
-        for (int i = 0; i < 3; i++) {
-            Pokemon pokemon1 = trainers[0].choosePokemon(i);
-            Pokemon pokemon2 = trainers[1].choosePokemon(i);
-            game.takeAdventure(new Adventure(trainers[0], pokemon1, trainers[1], pokemon2));
-        }
-        game.takeAdventure(new Adventure(trainers[0], trainers[0].chooseBestPokemon(), trainers[1], trainers[1].chooseBestPokemon()));
-
         // run game
         game.play();
     }

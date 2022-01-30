@@ -5,7 +5,7 @@ import pokemons.IPokemon;
 import pokemons.Pokemon;
 
 public class FighterPokemon implements IPokemon {
-    private Pokemon pokemon;
+    private final Pokemon pokemon;
     private boolean stunned = false;
     private boolean canDodge = false;
     private boolean fighting = false;
@@ -136,6 +136,7 @@ public class FighterPokemon implements IPokemon {
         pokemon.evolve();
     }
 
+    @Override
     public String toString() {
         return pokemon.toString();
     }

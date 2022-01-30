@@ -56,6 +56,7 @@ public class Adventure {
         return end(result);
     }
 
+    @Override
     public String toString() {
         return "Adventure: " + trainer1.getName() + "'s " + pokemon1.getName() + " vs " + trainer2.getName() + "'s " + pokemon2.getName();
     }

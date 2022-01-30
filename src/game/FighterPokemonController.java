@@ -3,5 +3,5 @@ package game;
 import game.fight.FightCommand;
 
 public interface FighterPokemonController {
-    public FightCommand giveCommand(FighterPokemon friend, FighterPokemon enemy);
+    FightCommand giveCommand(FighterPokemon friend, FighterPokemon enemy);
 }
