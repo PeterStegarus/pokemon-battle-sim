@@ -1,4 +1,6 @@
-package items;
+package items.factory;
+
+import items.*;
 
 import java.util.Arrays;
 import java.util.List;
@@ -27,12 +29,6 @@ public class ItemFactory {
         ItemMaker itemMaker = selectItemMaker(item);
         return itemMaker != null ? itemMaker.make() : null;
     }
-}
-
-interface ItemMaker {
-    boolean is(String item);
-
-    Item make();
 }
 
 class ScutMaker implements ItemMaker {

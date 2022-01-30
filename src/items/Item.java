@@ -1,12 +1,12 @@
 package items;
 
 public class Item {
-    private String name;
-    private int hp;
-    private int attack;
-    private int specialAttack;
-    private int defense;
-    private int specialDefense;
+    private final String name;
+    private final int hp;
+    private final int attack;
+    private final int specialAttack;
+    private final int defense;
+    private final int specialDefense;
 
     public Item(String name, int hp, int attack, int specialAttack, int defense, int specialDefense) {
         this.name = name;
