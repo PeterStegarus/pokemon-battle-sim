@@ -1,0 +1,5 @@
+Use Logger.log(message) just like you'd use System.out.print(message)
+
+Logger must be initialized with either a ConsoleLogger or a FileLogger.
+The FileLogger can take a ConsoleLogger too if logging to both the console and
+a file is needed.
