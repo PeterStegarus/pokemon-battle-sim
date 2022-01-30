@@ -1,4 +1,6 @@
-package pokemons;
+package pokemons.factory;
+
+import pokemons.*;
 
 import java.util.Arrays;
 import java.util.List;
@@ -28,12 +30,6 @@ public class PokemonFactory {
         PokemonMaker pokemonMaker = selectPokemonMaker(pokemon);
         return pokemonMaker != null ? pokemonMaker.make() : null;
     }
-}
-
-interface PokemonMaker {
-    boolean is(String pokemon);
-
-    Pokemon make();
 }
 
 class Neutrel1Maker implements PokemonMaker {

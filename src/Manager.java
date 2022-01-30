@@ -1,13 +1,13 @@
 import com.google.gson.*;
 import game.Game;
 import game.Trainer;
-import items.ItemFactory;
+import items.factory.ItemFactory;
 import logger.ConsoleLogger;
 import logger.FileLogger;
 import logger.ILogger;
 import logger.Logger;
 import pokemons.Pokemon;
-import pokemons.PokemonFactory;
+import pokemons.factory.PokemonFactory;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;

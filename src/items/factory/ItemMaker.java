@@ -2,7 +2,7 @@ package items.factory;
 
 import items.Item;
 
-public interface ItemMaker {
+interface ItemMaker {
     boolean is(String item);
 
     Item make();

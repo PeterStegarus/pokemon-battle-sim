@@ -5,7 +5,7 @@ import game.Trainer;
 import game.fight.AttackFightCommand;
 import logger.Logger;
 import pokemons.IPokemon;
-import pokemons.PokemonFactory;
+import pokemons.factory.PokemonFactory;
 
 import java.util.Arrays;
 
