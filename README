@@ -1,12 +1,12 @@
+1. factory
+PokemonFactory
+ItemFactory
 
+2. strategy (in PokemonFactory and in ItemFactory)
+select Maker at runtime and make the correct pokemon or item
 
-
-trebuie sa aleg 4 tipuri de design patterns:
-
-1&2&3. ??strategy?? filter? factory?
-    probabil pt alegerea pokemunului / itemului ca in exemplul lui victor cu taxa
-    probabil doar filter
-    probabil niciuna, sa vad
+3. filter (in PokemonFactory and in ItemFactory)
+select the correct maker based on the pokemon or item it makes
 
 4. command
 fight command:
@@ -27,26 +27,17 @@ FileLogger:
 pokemon, doar trainerilor le pasa. Nu aglomerez pokemonul mai mult decat e cazul
 
 
-
----
-
-"fiecare antrenor trebuie reprezentat cu un thread"
-dar batalia este turn based.
-Corectie, nu e turn based: la fiecare moment de timp, fiecare pokemon executa comanda.
-poate pot folosi aici pattern-ul command
-
-
-
-
 ------
-lupta:
+battle:
 
-cat timp ambii pokemoni sunt vii:
-    obtin cate o comanda pt fiecare pokemon
-    le dau executorului si rulez
-        la inceputul comenzii, se incepe randul atacatorului si apoi
-            daca este stunned, return
-            altfel, se asteapta pana se incepe si randul inamicului
-        se aplica damage-ul (de la atac sau abilitati)
-        se anunta terminarea randului atacatorului
-        se asteapta terminarea randului inamicului dupa care aplic stun si dodge de la abilitatea atacatorului
+while both pokemons still alive:
+    make a command for each pokemon
+    execute the 2 commands concurrently
+        init turn:
+            check if stunned or if able to dodge
+            wait for both to pass init phase
+        fight:
+            apply the damage
+        end turn:
+            wait for both to reach end phase
+            if an ability with stun was played, set stun now which applies for next turn
