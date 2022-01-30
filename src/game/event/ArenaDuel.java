@@ -35,22 +35,23 @@ public class ArenaDuel extends ArenaEvent {
             i++;
         }
 
-        pokemon2.reset();
-        pokemon1.reset();
+        int result;
 
-        if (pokemon1.isDefeated() && pokemon2.isDefeated())
-            return -1;  // draw
-
-        if (pokemon1.isDefeated()) {    // trainer2 wins
+        if (pokemon1.isDefeated() && pokemon2.isDefeated()) {
+            result = -1;    // draw
+        } else if (pokemon1.isDefeated()) {
             Logger.log("\tEvolved: " + pokemon2 + "\n");
             pokemon2.evolve();
-            return 2;
+            result = 2;     // trainer2 wins
+        } else {
+            Logger.log("\tEvolved: " + pokemon1 + "\n");
+            pokemon1.evolve();
+            result = 1;     // else, trainer1 wins
         }
 
-        // else, trainer1 wins
-        Logger.log("\tEvolved: " + pokemon1 + "\n");
-        pokemon1.evolve();
-        return 1;
+        pokemon2.reset();
+        pokemon1.reset();
+        return result;
     }
 
     public int fight() {
