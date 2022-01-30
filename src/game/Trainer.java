@@ -1,6 +1,8 @@
 package game;
 
-import logger.Logger;
+import game.fight.AbilityFightCommand;
+import game.fight.AttackFightCommand;
+import game.fight.FightCommand;
 import pokemons.Pokemon;
 
 import java.util.ArrayList;

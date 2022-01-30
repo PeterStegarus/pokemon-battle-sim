@@ -13,8 +13,17 @@ trebuie sa aleg 4 tipuri de design patterns:
     invoker: game
     receiver: adventure
 
-5. decorator: FighterPokemon. Pentru ca nu avea rost sa las logica legata de lupta in Pokemon.
-    Pokemonu e modelul, FighterPokemonu e controllerul lui
+fight command:
+    client: arena event
+    invoker: trainer
+    receiver: pokemons
+    command: (Ability|Attack)FightCommand
+
+5. decorator
+FighterPokemon:
+    pokemon only has the stats. FighterPokemon maintains the state during a fight
+FileLogger:
+    all loggers except for the most basic one (ConsoleLogger) should be decorators
 
 
 

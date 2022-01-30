@@ -1,0 +1,635 @@
+Start of new Adventure: jon's Pikachu vs jaon's Bulbasaur
+
+Arena Fight: jon's Pikachu (HP: 35) (Special attack: 4) (Defense: 4) (Special defense: 5) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}]) VS Neutrel1 (HP: 10) (Attack: 3) (Defense: 1) (Special defense: 1) (Abilities: [null, null]). Fight!
+[Turn 0]: {Pikachu: (HP35) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])} VS {Neutrel1 (HP10)}
+	Pikachu (35) uses ability [{Damage: 6 Cooldown: 0/4}]. It was effective!
+	Neutrel1 (10) uses attack. It wasn't efective.
+[Turn 1]: {Pikachu: (HP35) (Abilities: [{Damage: 6 Cooldown: 4/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])} VS {Neutrel1 (HP4)}
+	Pikachu (35) uses ability [{Damage: 4 Stun Dodge Cooldown: 0/5}]. It was effective!
+	Neutrel1 (4) uses attack. It wasn't efective.
+
+Arena Fight: jaon's Bulbasaur (HP: 42) (Special attack: 5) (Defense: 3) (Special defense: 1) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}]) VS Neutrel1 (HP: 10) (Attack: 3) (Defense: 1) (Special defense: 1) (Abilities: [null, null]). Fight!
+[Turn 0]: {Bulbasaur: (HP42) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])} VS {Neutrel1 (HP10)}
+	Bulbasaur (42) uses attack. It was effective!
+	Neutrel1 (10) uses attack. It was effective!
+[Turn 1]: {Bulbasaur: (HP42) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])} VS {Neutrel1 (HP6)}
+	Bulbasaur (42) uses ability [{Damage: 6 Cooldown: 0/4}]. It was effective!
+	Neutrel1 (6) uses attack. It was effective!
+Both Pokemons beat Neutrel. Evolve!
+	Evolved: Pikachu (HP: 36) (Special attack: 5) (Defense: 5) (Special defense: 6) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])
+	Evolved: Bulbasaur (HP: 43) (Special attack: 6) (Defense: 4) (Special defense: 2) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])
+
+Arena Fight: jon's Pikachu (HP: 36) (Special attack: 5) (Defense: 5) (Special defense: 6) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}]) VS Neutrel2 (HP: 20) (Attack: 4) (Defense: 1) (Special defense: 1) (Abilities: [null, null]). Fight!
+[Turn 0]: {Pikachu: (HP36) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])} VS {Neutrel2 (HP20)}
+	Pikachu (36) uses attack. It was effective!
+	Neutrel2 (20) uses attack. It wasn't efective.
+[Turn 1]: {Pikachu: (HP36) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])} VS {Neutrel2 (HP16)}
+	Pikachu (36) uses ability [{Damage: 4 Stun Dodge Cooldown: 0/5}]. It was effective!
+	Neutrel2 (16) uses attack. It wasn't efective.
+[Turn 2]: {Pikachu: (HP36) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 5/5}])} VS {Neutrel2 (HP12)}
+	Neutrel2 is stunned!
+	Pikachu (36) uses attack. It was effective!
+[Turn 3]: {Pikachu: (HP36) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 4/5}])} VS {Neutrel2 (HP8)}
+	Pikachu (36) uses attack. It was effective!
+	Neutrel2 (8) uses attack. It wasn't efective.
+[Turn 4]: {Pikachu: (HP36) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 3/5}])} VS {Neutrel2 (HP4)}
+	Pikachu (36) uses attack. It was effective!
+	Neutrel2 (4) uses attack. It wasn't efective.
+
+Arena Fight: jaon's Bulbasaur (HP: 43) (Special attack: 6) (Defense: 4) (Special defense: 2) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}]) VS Neutrel2 (HP: 20) (Attack: 4) (Defense: 1) (Special defense: 1) (Abilities: [null, null]). Fight!
+[Turn 0]: {Bulbasaur: (HP43) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])} VS {Neutrel2 (HP20)}
+	Bulbasaur (43) uses ability [{Damage: 6 Cooldown: 0/4}]. It was effective!
+	Neutrel2 (20) uses attack. It was effective!
+[Turn 1]: {Bulbasaur: (HP43) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])} VS {Neutrel2 (HP14)}
+	Bulbasaur (43) uses attack. It was effective!
+	Neutrel2 (14) uses attack. It was effective!
+[Turn 2]: {Bulbasaur: (HP43) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])} VS {Neutrel2 (HP9)}
+	Bulbasaur (43) uses attack. It was effective!
+	Neutrel2 (9) uses attack. It was effective!
+[Turn 3]: {Bulbasaur: (HP43) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])} VS {Neutrel2 (HP4)}
+	Bulbasaur (43) uses attack. It was effective!
+	Neutrel2 (4) uses attack. It was effective!
+Both Pokemons beat Neutrel. Evolve!
+	Evolved: Pikachu (HP: 37) (Special attack: 6) (Defense: 6) (Special defense: 7) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])
+	Evolved: Bulbasaur (HP: 44) (Special attack: 7) (Defense: 5) (Special defense: 3) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])
+
+Arena Fight: jon's Pikachu (HP: 37) (Special attack: 6) (Defense: 6) (Special defense: 7) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}]) VS Neutrel1 (HP: 10) (Attack: 3) (Defense: 1) (Special defense: 1) (Abilities: [null, null]). Fight!
+[Turn 0]: {Pikachu: (HP37) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])} VS {Neutrel1 (HP10)}
+	Pikachu (37) uses ability [{Damage: 6 Cooldown: 0/4}]. It was effective!
+	Neutrel1 (10) uses attack. It wasn't efective.
+[Turn 1]: {Pikachu: (HP37) (Abilities: [{Damage: 6 Cooldown: 4/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])} VS {Neutrel1 (HP4)}
+	Pikachu (37) uses ability [{Damage: 4 Stun Dodge Cooldown: 0/5}]. It was effective!
+	Neutrel1 (4) uses attack. It wasn't efective.
+
+Arena Fight: jaon's Bulbasaur (HP: 44) (Special attack: 7) (Defense: 5) (Special defense: 3) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}]) VS Neutrel1 (HP: 10) (Attack: 3) (Defense: 1) (Special defense: 1) (Abilities: [null, null]). Fight!
+[Turn 0]: {Bulbasaur: (HP44) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])} VS {Neutrel1 (HP10)}
+	Bulbasaur (44) uses ability [{Damage: 6 Cooldown: 0/4}]. It was effective!
+	Neutrel1 (10) uses attack. It wasn't efective.
+[Turn 1]: {Bulbasaur: (HP44) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])} VS {Neutrel1 (HP4)}
+	Bulbasaur (44) uses attack. It was effective!
+	Neutrel1 (4) uses attack. It wasn't efective.
+Both Pokemons beat Neutrel. Evolve!
+	Evolved: Pikachu (HP: 38) (Special attack: 7) (Defense: 7) (Special defense: 8) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])
+	Evolved: Bulbasaur (HP: 45) (Special attack: 8) (Defense: 6) (Special defense: 4) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])
+
+Arena Fight: jon's Pikachu (HP: 38) (Special attack: 7) (Defense: 7) (Special defense: 8) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}]) VS Neutrel1 (HP: 10) (Attack: 3) (Defense: 1) (Special defense: 1) (Abilities: [null, null]). Fight!
+[Turn 0]: {Pikachu: (HP38) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])} VS {Neutrel1 (HP10)}
+	Pikachu (38) uses ability [{Damage: 4 Stun Dodge Cooldown: 0/5}]. It was effective!
+	Neutrel1 (10) uses attack. It wasn't efective.
+[Turn 1]: {Pikachu: (HP38) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 5/5}])} VS {Neutrel1 (HP6)}
+	Neutrel1 is stunned!
+	Pikachu (38) uses ability [{Damage: 6 Cooldown: 0/4}]. It was effective!
+
+Arena Fight: jaon's Bulbasaur (HP: 45) (Special attack: 8) (Defense: 6) (Special defense: 4) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}]) VS Neutrel1 (HP: 10) (Attack: 3) (Defense: 1) (Special defense: 1) (Abilities: [null, null]). Fight!
+[Turn 0]: {Bulbasaur: (HP45) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])} VS {Neutrel1 (HP10)}
+	Bulbasaur (45) uses ability [{Damage: 6 Cooldown: 0/4}]. It was effective!
+	Neutrel1 (10) uses attack. It wasn't efective.
+[Turn 1]: {Bulbasaur: (HP45) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])} VS {Neutrel1 (HP4)}
+	Bulbasaur (45) uses ability [{Damage: 5 Cooldown: 0/3}]. It was effective!
+	Neutrel1 (4) uses attack. It wasn't efective.
+Both Pokemons beat Neutrel. Evolve!
+	Evolved: Pikachu (HP: 39) (Special attack: 8) (Defense: 8) (Special defense: 9) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])
+	Evolved: Bulbasaur (HP: 46) (Special attack: 9) (Defense: 7) (Special defense: 5) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])
+
+Arena Fight: jon's Pikachu (HP: 39) (Special attack: 8) (Defense: 8) (Special defense: 9) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}]) VS Neutrel2 (HP: 20) (Attack: 4) (Defense: 1) (Special defense: 1) (Abilities: [null, null]). Fight!
+[Turn 0]: {Pikachu: (HP39) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])} VS {Neutrel2 (HP20)}
+	Pikachu (39) uses ability [{Damage: 6 Cooldown: 0/4}]. It was effective!
+	Neutrel2 (20) uses attack. It wasn't efective.
+[Turn 1]: {Pikachu: (HP39) (Abilities: [{Damage: 6 Cooldown: 4/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])} VS {Neutrel2 (HP14)}
+	Pikachu (39) uses attack. It was effective!
+	Neutrel2 (14) uses attack. It wasn't efective.
+[Turn 2]: {Pikachu: (HP39) (Abilities: [{Damage: 6 Cooldown: 3/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])} VS {Neutrel2 (HP7)}
+	Pikachu (39) uses ability [{Damage: 4 Stun Dodge Cooldown: 0/5}]. It was effective!
+	Neutrel2 (7) uses attack. It wasn't efective.
+[Turn 3]: {Pikachu: (HP39) (Abilities: [{Damage: 6 Cooldown: 2/4}, {Damage: 4 Stun Dodge Cooldown: 5/5}])} VS {Neutrel2 (HP3)}
+	Neutrel2 is stunned!
+	Pikachu (39) uses attack. It was effective!
+
+Arena Fight: jaon's Bulbasaur (HP: 46) (Special attack: 9) (Defense: 7) (Special defense: 5) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}]) VS Neutrel2 (HP: 20) (Attack: 4) (Defense: 1) (Special defense: 1) (Abilities: [null, null]). Fight!
+[Turn 0]: {Bulbasaur: (HP46) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])} VS {Neutrel2 (HP20)}
+	Bulbasaur (46) uses ability [{Damage: 5 Cooldown: 0/3}]. It was effective!
+	Neutrel2 (20) uses attack. It wasn't efective.
+[Turn 1]: {Bulbasaur: (HP46) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])} VS {Neutrel2 (HP15)}
+	Bulbasaur (46) uses ability [{Damage: 6 Cooldown: 0/4}]. It was effective!
+	Neutrel2 (15) uses attack. It wasn't efective.
+[Turn 2]: {Bulbasaur: (HP46) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])} VS {Neutrel2 (HP9)}
+	Bulbasaur (46) uses attack. It was effective!
+	Neutrel2 (9) uses attack. It wasn't efective.
+[Turn 3]: {Bulbasaur: (HP46) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])} VS {Neutrel2 (HP1)}
+	Bulbasaur (46) uses attack. It was effective!
+	Neutrel2 (1) uses attack. It wasn't efective.
+Both Pokemons beat Neutrel. Evolve!
+	Evolved: Pikachu (HP: 40) (Special attack: 9) (Defense: 9) (Special defense: 10) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])
+	Evolved: Bulbasaur (HP: 47) (Special attack: 10) (Defense: 8) (Special defense: 6) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])
+
+Arena Fight: jon's Pikachu (HP: 40) (Special attack: 9) (Defense: 9) (Special defense: 10) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}]) VS Neutrel2 (HP: 20) (Attack: 4) (Defense: 1) (Special defense: 1) (Abilities: [null, null]). Fight!
+[Turn 0]: {Pikachu: (HP40) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])} VS {Neutrel2 (HP20)}
+	Pikachu (40) uses ability [{Damage: 6 Cooldown: 0/4}]. It was effective!
+	Neutrel2 (20) uses attack. It wasn't efective.
+[Turn 1]: {Pikachu: (HP40) (Abilities: [{Damage: 6 Cooldown: 4/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])} VS {Neutrel2 (HP14)}
+	Pikachu (40) uses ability [{Damage: 4 Stun Dodge Cooldown: 0/5}]. It was effective!
+	Neutrel2 (14) uses attack. It wasn't efective.
+[Turn 2]: {Pikachu: (HP40) (Abilities: [{Damage: 6 Cooldown: 3/4}, {Damage: 4 Stun Dodge Cooldown: 5/5}])} VS {Neutrel2 (HP10)}
+	Neutrel2 is stunned!
+	Pikachu (40) uses attack. It was effective!
+[Turn 3]: {Pikachu: (HP40) (Abilities: [{Damage: 6 Cooldown: 2/4}, {Damage: 4 Stun Dodge Cooldown: 4/5}])} VS {Neutrel2 (HP2)}
+	Pikachu (40) uses attack. It was effective!
+	Neutrel2 (2) uses attack. It wasn't efective.
+
+Arena Fight: jaon's Bulbasaur (HP: 47) (Special attack: 10) (Defense: 8) (Special defense: 6) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}]) VS Neutrel2 (HP: 20) (Attack: 4) (Defense: 1) (Special defense: 1) (Abilities: [null, null]). Fight!
+[Turn 0]: {Bulbasaur: (HP47) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])} VS {Neutrel2 (HP20)}
+	Bulbasaur (47) uses ability [{Damage: 6 Cooldown: 0/4}]. It was effective!
+	Neutrel2 (20) uses attack. It wasn't efective.
+[Turn 1]: {Bulbasaur: (HP47) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])} VS {Neutrel2 (HP14)}
+	Bulbasaur (47) uses ability [{Damage: 5 Cooldown: 0/3}]. It was effective!
+	Neutrel2 (14) uses attack. It wasn't efective.
+[Turn 2]: {Bulbasaur: (HP47) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])} VS {Neutrel2 (HP9)}
+	Bulbasaur (47) uses attack. It was effective!
+	Neutrel2 (9) uses attack. It wasn't efective.
+Both Pokemons beat Neutrel. Evolve!
+	Evolved: Pikachu (HP: 41) (Special attack: 10) (Defense: 10) (Special defense: 11) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])
+	Evolved: Bulbasaur (HP: 48) (Special attack: 11) (Defense: 9) (Special defense: 7) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])
+
+Arena Fight: jon's Pikachu (HP: 41) (Special attack: 10) (Defense: 10) (Special defense: 11) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}]) VS Neutrel2 (HP: 20) (Attack: 4) (Defense: 1) (Special defense: 1) (Abilities: [null, null]). Fight!
+[Turn 0]: {Pikachu: (HP41) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])} VS {Neutrel2 (HP20)}
+	Pikachu (41) uses ability [{Damage: 4 Stun Dodge Cooldown: 0/5}]. It was effective!
+	Neutrel2 (20) uses attack. It wasn't efective.
+[Turn 1]: {Pikachu: (HP41) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 5/5}])} VS {Neutrel2 (HP16)}
+	Neutrel2 is stunned!
+	Pikachu (41) uses ability [{Damage: 6 Cooldown: 0/4}]. It was effective!
+[Turn 2]: {Pikachu: (HP41) (Abilities: [{Damage: 6 Cooldown: 4/4}, {Damage: 4 Stun Dodge Cooldown: 4/5}])} VS {Neutrel2 (HP10)}
+	Pikachu (41) uses attack. It was effective!
+	Neutrel2 (10) uses attack. It wasn't efective.
+[Turn 3]: {Pikachu: (HP41) (Abilities: [{Damage: 6 Cooldown: 3/4}, {Damage: 4 Stun Dodge Cooldown: 3/5}])} VS {Neutrel2 (HP1)}
+	Pikachu (41) uses attack. It was effective!
+	Neutrel2 (1) uses attack. It wasn't efective.
+
+Arena Fight: jaon's Bulbasaur (HP: 48) (Special attack: 11) (Defense: 9) (Special defense: 7) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}]) VS Neutrel2 (HP: 20) (Attack: 4) (Defense: 1) (Special defense: 1) (Abilities: [null, null]). Fight!
+[Turn 0]: {Bulbasaur: (HP48) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])} VS {Neutrel2 (HP20)}
+	Bulbasaur (48) uses attack. It was effective!
+	Neutrel2 (20) uses attack. It wasn't efective.
+[Turn 1]: {Bulbasaur: (HP48) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])} VS {Neutrel2 (HP10)}
+	Bulbasaur (48) uses ability [{Damage: 5 Cooldown: 0/3}]. It was effective!
+	Neutrel2 (10) uses attack. It wasn't efective.
+[Turn 2]: {Bulbasaur: (HP48) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])} VS {Neutrel2 (HP5)}
+	Bulbasaur (48) uses attack. It was effective!
+	Neutrel2 (5) uses attack. It wasn't efective.
+Both Pokemons beat Neutrel. Evolve!
+	Evolved: Pikachu (HP: 42) (Special attack: 11) (Defense: 11) (Special defense: 12) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])
+	Evolved: Bulbasaur (HP: 49) (Special attack: 12) (Defense: 10) (Special defense: 8) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])
+
+Arena Duel: jon's Pikachu (HP: 42) (Special attack: 11) (Defense: 11) (Special defense: 12) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}]) VS jaon's Bulbasaur (HP: 49) (Special attack: 12) (Defense: 10) (Special defense: 8) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}]). Fight!
+[Turn 0]:
+{Pikachu: (HP42) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])} VS
+{Bulbasaur: (HP49) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])}
+	Pikachu (42) uses ability [{Damage: 4 Stun Dodge Cooldown: 0/5}]. It was effective!
+	Bulbasaur (49) uses ability [{Damage: 5 Cooldown: 0/3}]. It wasn't efective.
+[Turn 1]:
+{Pikachu: (HP42) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 5/5}])} VS
+{Bulbasaur: (HP45) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 3/3}])}
+	Bulbasaur is stunned!
+	Pikachu (42) uses attack. It was effective!
+[Turn 2]:
+{Pikachu: (HP42) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 4/5}])} VS
+{Bulbasaur: (HP42) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 2/3}])}
+	Pikachu (42) uses attack. It was effective!
+	Bulbasaur (42) uses attack. It was effective!
+[Turn 3]:
+{Pikachu: (HP42) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 3/5}])} VS
+{Bulbasaur: (HP39) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 1/3}])}
+	Bulbasaur (39) uses attack. It was effective!
+	Pikachu (42) uses ability [{Damage: 6 Cooldown: 0/4}]. It was effective!
+[Turn 4]:
+{Pikachu: (HP42) (Abilities: [{Damage: 6 Cooldown: 4/4}, {Damage: 4 Stun Dodge Cooldown: 2/5}])} VS
+{Bulbasaur: (HP33) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])}
+	Pikachu (42) uses attack. It was effective!
+	Bulbasaur (33) uses ability [{Damage: 6 Cooldown: 0/4}]. It was effective!
+[Turn 5]:
+{Pikachu: (HP36) (Abilities: [{Damage: 6 Cooldown: 3/4}, {Damage: 4 Stun Dodge Cooldown: 1/5}])} VS
+{Bulbasaur: (HP30) (Abilities: [{Damage: 6 Cooldown: 4/4}, {Damage: 5 Cooldown: 0/3}])}
+	Bulbasaur (30) uses attack. It was effective!
+	Pikachu (36) uses attack. It was effective!
+[Turn 6]:
+{Pikachu: (HP36) (Abilities: [{Damage: 6 Cooldown: 2/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])} VS
+{Bulbasaur: (HP27) (Abilities: [{Damage: 6 Cooldown: 3/4}, {Damage: 5 Cooldown: 0/3}])}
+	Bulbasaur (27) uses ability [{Damage: 5 Cooldown: 0/3}]. It was effective!
+	Pikachu (36) uses attack. It was effective!
+[Turn 7]:
+{Pikachu: (HP31) (Abilities: [{Damage: 6 Cooldown: 1/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])} VS
+{Bulbasaur: (HP24) (Abilities: [{Damage: 6 Cooldown: 2/4}, {Damage: 5 Cooldown: 3/3}])}
+	Bulbasaur (24) uses attack. It was effective!
+	Pikachu (31) uses attack. It was effective!
+[Turn 8]:
+{Pikachu: (HP31) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])} VS
+{Bulbasaur: (HP21) (Abilities: [{Damage: 6 Cooldown: 1/4}, {Damage: 5 Cooldown: 2/3}])}
+	Bulbasaur (21) uses attack. It wasn't efective.
+	Pikachu (31) uses ability [{Damage: 4 Stun Dodge Cooldown: 0/5}]. It was effective!
+[Turn 9]:
+{Pikachu: (HP31) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 5/5}])} VS
+{Bulbasaur: (HP17) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 1/3}])}
+	Bulbasaur is stunned!
+	Pikachu (31) uses ability [{Damage: 6 Cooldown: 0/4}]. It was effective!
+[Turn 10]:
+{Pikachu: (HP31) (Abilities: [{Damage: 6 Cooldown: 4/4}, {Damage: 4 Stun Dodge Cooldown: 4/5}])} VS
+{Bulbasaur: (HP11) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])}
+	Bulbasaur (11) uses attack. It was effective!
+	Pikachu (31) uses attack. It was effective!
+[Turn 11]:
+{Pikachu: (HP31) (Abilities: [{Damage: 6 Cooldown: 3/4}, {Damage: 4 Stun Dodge Cooldown: 3/5}])} VS
+{Bulbasaur: (HP8) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])}
+	Bulbasaur (8) uses attack. It was effective!
+	Pikachu (31) uses attack. It was effective!
+[Turn 12]:
+{Pikachu: (HP31) (Abilities: [{Damage: 6 Cooldown: 2/4}, {Damage: 4 Stun Dodge Cooldown: 2/5}])} VS
+{Bulbasaur: (HP5) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])}
+	Bulbasaur (5) uses ability [{Damage: 6 Cooldown: 0/4}]. It was effective!
+	Pikachu (31) uses attack. It was effective!
+[Turn 13]:
+{Pikachu: (HP25) (Abilities: [{Damage: 6 Cooldown: 1/4}, {Damage: 4 Stun Dodge Cooldown: 1/5}])} VS
+{Bulbasaur: (HP2) (Abilities: [{Damage: 6 Cooldown: 4/4}, {Damage: 5 Cooldown: 0/3}])}
+	Bulbasaur (2) uses attack. It was effective!
+	Pikachu (25) uses attack. It was effective!
+	Evolved: Pikachu (HP: 42) (Special attack: 11) (Defense: 11) (Special defense: 12) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])
+Result of Adventure: jon's Pikachu vs jaon's Bulbasaur: Pikachu (HP: 43) (Special attack: 12) (Defense: 12) (Special defense: 13) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}]) wins!
+
+Start of new Adventure: jon's Bulbasaur vs jaon's Charmander
+
+Arena Fight: jon's Bulbasaur (HP: 52) (Special attack: 5) (Defense: 5) (Special defense: 3) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}]) VS Neutrel2 (HP: 20) (Attack: 4) (Defense: 1) (Special defense: 1) (Abilities: [null, null]). Fight!
+[Turn 0]: {Bulbasaur: (HP52) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])} VS {Neutrel2 (HP20)}
+	Bulbasaur (52) uses ability [{Damage: 5 Cooldown: 0/3}]. It was effective!
+	Neutrel2 (20) uses attack. It wasn't efective.
+[Turn 1]: {Bulbasaur: (HP52) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 3/3}])} VS {Neutrel2 (HP15)}
+	Bulbasaur (52) uses ability [{Damage: 6 Cooldown: 0/4}]. It was effective!
+	Neutrel2 (15) uses attack. It wasn't efective.
+[Turn 2]: {Bulbasaur: (HP52) (Abilities: [{Damage: 6 Cooldown: 4/4}, {Damage: 5 Cooldown: 2/3}])} VS {Neutrel2 (HP9)}
+	Bulbasaur (52) uses attack. It was effective!
+	Neutrel2 (9) uses attack. It wasn't efective.
+[Turn 3]: {Bulbasaur: (HP52) (Abilities: [{Damage: 6 Cooldown: 3/4}, {Damage: 5 Cooldown: 1/3}])} VS {Neutrel2 (HP5)}
+	Bulbasaur (52) uses attack. It was effective!
+	Neutrel2 (5) uses attack. It wasn't efective.
+[Turn 4]: {Bulbasaur: (HP52) (Abilities: [{Damage: 6 Cooldown: 2/4}, {Damage: 5 Cooldown: 0/3}])} VS {Neutrel2 (HP1)}
+	Bulbasaur (52) uses attack. It was effective!
+	Neutrel2 (1) uses attack. It wasn't efective.
+
+Arena Fight: jaon's Charmander (HP: 50) (Attack: 4) (Defense: 5) (Special defense: 4) (Abilities: [{Damage: 4 Stun Cooldown: 0/4}, {Damage: 7 Cooldown: 0/6}]) VS Neutrel2 (HP: 20) (Attack: 4) (Defense: 1) (Special defense: 1) (Abilities: [null, null]). Fight!
+[Turn 0]: {Charmander: (HP50) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])} VS {Neutrel2 (HP20)}
+	Charmander (50) uses ability [{Damage: 7 Cooldown: 0/6}]. It was effective!
+	Neutrel2 (20) uses attack. It wasn't efective.
+[Turn 1]: {Charmander: (HP50) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])} VS {Neutrel2 (HP13)}
+	Charmander (50) uses ability [{Damage: 4 Stun Cooldown: 0/4}]. It was effective!
+	Neutrel2 (13) uses attack. It wasn't efective.
+[Turn 2]: {Charmander: (HP50) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])} VS {Neutrel2 (HP9)}
+	Neutrel2 is stunned!
+	Charmander (50) uses attack. It was effective!
+[Turn 3]: {Charmander: (HP50) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])} VS {Neutrel2 (HP6)}
+	Charmander (50) uses attack. It was effective!
+	Neutrel2 (6) uses attack. It wasn't efective.
+[Turn 4]: {Charmander: (HP50) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])} VS {Neutrel2 (HP3)}
+	Charmander (50) uses attack. It was effective!
+	Neutrel2 (3) uses attack. It wasn't efective.
+Both Pokemons beat Neutrel. Evolve!
+	Evolved: Bulbasaur (HP: 53) (Special attack: 6) (Defense: 6) (Special defense: 4) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])
+	Evolved: Charmander (HP: 51) (Attack: 5) (Defense: 6) (Special defense: 5) (Abilities: [{Damage: 4 Stun Cooldown: 0/4}, {Damage: 7 Cooldown: 0/6}])
+
+Arena Fight: jon's Bulbasaur (HP: 53) (Special attack: 6) (Defense: 6) (Special defense: 4) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}]) VS Neutrel1 (HP: 10) (Attack: 3) (Defense: 1) (Special defense: 1) (Abilities: [null, null]). Fight!
+[Turn 0]: {Bulbasaur: (HP53) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])} VS {Neutrel1 (HP10)}
+	Bulbasaur (53) uses attack. It was effective!
+	Neutrel1 (10) uses attack. It wasn't efective.
+[Turn 1]: {Bulbasaur: (HP53) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])} VS {Neutrel1 (HP5)}
+	Bulbasaur (53) uses ability [{Damage: 5 Cooldown: 0/3}]. It was effective!
+	Neutrel1 (5) uses attack. It wasn't efective.
+
+Arena Fight: jaon's Charmander (HP: 51) (Attack: 5) (Defense: 6) (Special defense: 5) (Abilities: [{Damage: 4 Stun Cooldown: 0/4}, {Damage: 7 Cooldown: 0/6}]) VS Neutrel1 (HP: 10) (Attack: 3) (Defense: 1) (Special defense: 1) (Abilities: [null, null]). Fight!
+[Turn 0]: {Charmander: (HP51) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])} VS {Neutrel1 (HP10)}
+	Charmander (51) uses attack. It was effective!
+	Neutrel1 (10) uses attack. It wasn't efective.
+[Turn 1]: {Charmander: (HP51) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])} VS {Neutrel1 (HP6)}
+	Charmander (51) uses attack. It was effective!
+	Neutrel1 (6) uses attack. It wasn't efective.
+[Turn 2]: {Charmander: (HP51) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])} VS {Neutrel1 (HP2)}
+	Charmander (51) uses ability [{Damage: 4 Stun Cooldown: 0/4}]. It was effective!
+	Neutrel1 (2) uses attack. It wasn't efective.
+Both Pokemons beat Neutrel. Evolve!
+	Evolved: Bulbasaur (HP: 54) (Special attack: 7) (Defense: 7) (Special defense: 5) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])
+	Evolved: Charmander (HP: 52) (Attack: 6) (Defense: 7) (Special defense: 6) (Abilities: [{Damage: 4 Stun Cooldown: 0/4}, {Damage: 7 Cooldown: 0/6}])
+
+Arena Fight: jon's Bulbasaur (HP: 54) (Special attack: 7) (Defense: 7) (Special defense: 5) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}]) VS Neutrel1 (HP: 10) (Attack: 3) (Defense: 1) (Special defense: 1) (Abilities: [null, null]). Fight!
+[Turn 0]: {Bulbasaur: (HP54) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])} VS {Neutrel1 (HP10)}
+	Bulbasaur (54) uses ability [{Damage: 5 Cooldown: 0/3}]. It was effective!
+	Neutrel1 (10) uses attack. It wasn't efective.
+[Turn 1]: {Bulbasaur: (HP54) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 3/3}])} VS {Neutrel1 (HP5)}
+	Bulbasaur (54) uses ability [{Damage: 6 Cooldown: 0/4}]. It was effective!
+	Neutrel1 (5) uses attack. It wasn't efective.
+
+Arena Fight: jaon's Charmander (HP: 52) (Attack: 6) (Defense: 7) (Special defense: 6) (Abilities: [{Damage: 4 Stun Cooldown: 0/4}, {Damage: 7 Cooldown: 0/6}]) VS Neutrel1 (HP: 10) (Attack: 3) (Defense: 1) (Special defense: 1) (Abilities: [null, null]). Fight!
+[Turn 0]: {Charmander: (HP52) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])} VS {Neutrel1 (HP10)}
+	Charmander (52) uses ability [{Damage: 7 Cooldown: 0/6}]. It was effective!
+	Neutrel1 (10) uses attack. It wasn't efective.
+[Turn 1]: {Charmander: (HP52) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])} VS {Neutrel1 (HP3)}
+	Charmander (52) uses attack. It was effective!
+	Neutrel1 (3) uses attack. It wasn't efective.
+Both Pokemons beat Neutrel. Evolve!
+	Evolved: Bulbasaur (HP: 55) (Special attack: 8) (Defense: 8) (Special defense: 6) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])
+	Evolved: Charmander (HP: 53) (Attack: 7) (Defense: 8) (Special defense: 7) (Abilities: [{Damage: 4 Stun Cooldown: 0/4}, {Damage: 7 Cooldown: 0/6}])
+
+Arena Duel: jon's Bulbasaur (HP: 55) (Special attack: 8) (Defense: 8) (Special defense: 6) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}]) VS jaon's Charmander (HP: 53) (Attack: 7) (Defense: 8) (Special defense: 7) (Abilities: [{Damage: 4 Stun Cooldown: 0/4}, {Damage: 7 Cooldown: 0/6}]). Fight!
+[Turn 0]:
+{Bulbasaur: (HP55) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])} VS
+{Charmander: (HP53) (Abilities: [{Damage: 4 Stun Cooldown: 0/4}, {Damage: 7 Cooldown: 0/6}])}
+	Charmander (53) uses ability [{Damage: 7 Cooldown: 0/6}]. It was effective!
+	Bulbasaur (55) uses attack. It was effective!
+[Turn 1]:
+{Bulbasaur: (HP48) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])} VS
+{Charmander: (HP52) (Abilities: [{Damage: 4 Stun Cooldown: 0/4}, {Damage: 7 Cooldown: 6/6}])}
+	Charmander (52) uses attack. It wasn't efective.
+	Bulbasaur (48) uses attack. It was effective!
+[Turn 2]:
+{Bulbasaur: (HP48) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])} VS
+{Charmander: (HP51) (Abilities: [{Damage: 4 Stun Cooldown: 0/4}, {Damage: 7 Cooldown: 5/6}])}
+	Charmander (51) uses ability [{Damage: 4 Stun Cooldown: 0/4}]. It was effective!
+	Bulbasaur (48) uses attack. It was effective!
+[Turn 3]:
+{Bulbasaur: (HP44) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])} VS
+{Charmander: (HP50) (Abilities: [{Damage: 4 Stun Cooldown: 4/4}, {Damage: 7 Cooldown: 4/6}])}
+	Bulbasaur is stunned!
+	Charmander (50) uses attack. It wasn't efective.
+[Turn 4]:
+{Bulbasaur: (HP44) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])} VS
+{Charmander: (HP50) (Abilities: [{Damage: 4 Stun Cooldown: 3/4}, {Damage: 7 Cooldown: 3/6}])}
+	Charmander (50) uses attack. It wasn't efective.
+	Bulbasaur (44) uses ability [{Damage: 6 Cooldown: 0/4}]. It was effective!
+[Turn 5]:
+{Bulbasaur: (HP44) (Abilities: [{Damage: 6 Cooldown: 4/4}, {Damage: 5 Cooldown: 0/3}])} VS
+{Charmander: (HP44) (Abilities: [{Damage: 4 Stun Cooldown: 2/4}, {Damage: 7 Cooldown: 2/6}])}
+	Charmander (44) uses attack. It wasn't efective.
+	Bulbasaur (44) uses attack. It was effective!
+[Turn 6]:
+{Bulbasaur: (HP44) (Abilities: [{Damage: 6 Cooldown: 3/4}, {Damage: 5 Cooldown: 0/3}])} VS
+{Charmander: (HP43) (Abilities: [{Damage: 4 Stun Cooldown: 1/4}, {Damage: 7 Cooldown: 1/6}])}
+	Charmander (43) uses attack. It wasn't efective.
+	Bulbasaur (44) uses ability [{Damage: 5 Cooldown: 0/3}]. It was effective!
+[Turn 7]:
+{Bulbasaur: (HP44) (Abilities: [{Damage: 6 Cooldown: 2/4}, {Damage: 5 Cooldown: 3/3}])} VS
+{Charmander: (HP38) (Abilities: [{Damage: 4 Stun Cooldown: 0/4}, {Damage: 7 Cooldown: 0/6}])}
+	Charmander (38) uses attack. It wasn't efective.
+	Bulbasaur (44) uses attack. It was effective!
+[Turn 8]:
+{Bulbasaur: (HP44) (Abilities: [{Damage: 6 Cooldown: 1/4}, {Damage: 5 Cooldown: 2/3}])} VS
+{Charmander: (HP37) (Abilities: [{Damage: 4 Stun Cooldown: 0/4}, {Damage: 7 Cooldown: 0/6}])}
+	Charmander (37) uses attack. It wasn't efective.
+	Bulbasaur (44) uses attack. It was effective!
+[Turn 9]:
+{Bulbasaur: (HP44) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 1/3}])} VS
+{Charmander: (HP36) (Abilities: [{Damage: 4 Stun Cooldown: 0/4}, {Damage: 7 Cooldown: 0/6}])}
+	Charmander (36) uses attack. It wasn't efective.
+	Bulbasaur (44) uses attack. It was effective!
+[Turn 10]:
+{Bulbasaur: (HP44) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])} VS
+{Charmander: (HP35) (Abilities: [{Damage: 4 Stun Cooldown: 0/4}, {Damage: 7 Cooldown: 0/6}])}
+	Charmander (35) uses attack. It wasn't efective.
+	Bulbasaur (44) uses ability [{Damage: 5 Cooldown: 0/3}]. It was effective!
+[Turn 11]:
+{Bulbasaur: (HP44) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 3/3}])} VS
+{Charmander: (HP30) (Abilities: [{Damage: 4 Stun Cooldown: 0/4}, {Damage: 7 Cooldown: 0/6}])}
+	Charmander (30) uses ability [{Damage: 4 Stun Cooldown: 0/4}]. It was effective!
+	Bulbasaur (44) uses attack. It was effective!
+[Turn 12]:
+{Bulbasaur: (HP40) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 2/3}])} VS
+{Charmander: (HP29) (Abilities: [{Damage: 4 Stun Cooldown: 4/4}, {Damage: 7 Cooldown: 0/6}])}
+	Bulbasaur is stunned!
+	Charmander (29) uses ability [{Damage: 7 Cooldown: 0/6}]. It was effective!
+[Turn 13]:
+{Bulbasaur: (HP33) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 1/3}])} VS
+{Charmander: (HP29) (Abilities: [{Damage: 4 Stun Cooldown: 3/4}, {Damage: 7 Cooldown: 6/6}])}
+	Charmander (29) uses attack. It wasn't efective.
+	Bulbasaur (33) uses ability [{Damage: 6 Cooldown: 0/4}]. It was effective!
+[Turn 14]:
+{Bulbasaur: (HP33) (Abilities: [{Damage: 6 Cooldown: 4/4}, {Damage: 5 Cooldown: 0/3}])} VS
+{Charmander: (HP23) (Abilities: [{Damage: 4 Stun Cooldown: 2/4}, {Damage: 7 Cooldown: 5/6}])}
+	Charmander (23) uses attack. It wasn't efective.
+	Bulbasaur (33) uses ability [{Damage: 5 Cooldown: 0/3}]. It was effective!
+[Turn 15]:
+{Bulbasaur: (HP33) (Abilities: [{Damage: 6 Cooldown: 3/4}, {Damage: 5 Cooldown: 3/3}])} VS
+{Charmander: (HP18) (Abilities: [{Damage: 4 Stun Cooldown: 1/4}, {Damage: 7 Cooldown: 4/6}])}
+	Charmander (18) uses attack. It wasn't efective.
+	Bulbasaur (33) uses attack. It was effective!
+[Turn 16]:
+{Bulbasaur: (HP33) (Abilities: [{Damage: 6 Cooldown: 2/4}, {Damage: 5 Cooldown: 2/3}])} VS
+{Charmander: (HP17) (Abilities: [{Damage: 4 Stun Cooldown: 0/4}, {Damage: 7 Cooldown: 3/6}])}
+	Charmander (17) uses ability [{Damage: 4 Stun Cooldown: 0/4}]. It was effective!
+	Bulbasaur (33) uses attack. It was effective!
+[Turn 17]:
+{Bulbasaur: (HP29) (Abilities: [{Damage: 6 Cooldown: 1/4}, {Damage: 5 Cooldown: 1/3}])} VS
+{Charmander: (HP16) (Abilities: [{Damage: 4 Stun Cooldown: 4/4}, {Damage: 7 Cooldown: 2/6}])}
+	Bulbasaur is stunned!
+	Charmander (16) uses attack. It wasn't efective.
+[Turn 18]:
+{Bulbasaur: (HP29) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])} VS
+{Charmander: (HP16) (Abilities: [{Damage: 4 Stun Cooldown: 3/4}, {Damage: 7 Cooldown: 1/6}])}
+	Charmander (16) uses attack. It wasn't efective.
+	Bulbasaur (29) uses ability [{Damage: 6 Cooldown: 0/4}]. It was effective!
+[Turn 19]:
+{Bulbasaur: (HP29) (Abilities: [{Damage: 6 Cooldown: 4/4}, {Damage: 5 Cooldown: 0/3}])} VS
+{Charmander: (HP10) (Abilities: [{Damage: 4 Stun Cooldown: 2/4}, {Damage: 7 Cooldown: 0/6}])}
+	Charmander (10) uses attack. It wasn't efective.
+	Bulbasaur (29) uses ability [{Damage: 5 Cooldown: 0/3}]. It was effective!
+[Turn 20]:
+{Bulbasaur: (HP29) (Abilities: [{Damage: 6 Cooldown: 3/4}, {Damage: 5 Cooldown: 3/3}])} VS
+{Charmander: (HP5) (Abilities: [{Damage: 4 Stun Cooldown: 1/4}, {Damage: 7 Cooldown: 0/6}])}
+	Charmander (5) uses attack. It wasn't efective.
+	Bulbasaur (29) uses attack. It was effective!
+[Turn 21]:
+{Bulbasaur: (HP29) (Abilities: [{Damage: 6 Cooldown: 2/4}, {Damage: 5 Cooldown: 2/3}])} VS
+{Charmander: (HP4) (Abilities: [{Damage: 4 Stun Cooldown: 0/4}, {Damage: 7 Cooldown: 0/6}])}
+	Charmander (4) uses ability [{Damage: 7 Cooldown: 0/6}]. It was effective!
+	Bulbasaur (29) uses attack. It was effective!
+[Turn 22]:
+{Bulbasaur: (HP22) (Abilities: [{Damage: 6 Cooldown: 1/4}, {Damage: 5 Cooldown: 1/3}])} VS
+{Charmander: (HP3) (Abilities: [{Damage: 4 Stun Cooldown: 0/4}, {Damage: 7 Cooldown: 6/6}])}
+	Charmander (3) uses attack. It wasn't efective.
+	Bulbasaur (22) uses attack. It was effective!
+[Turn 23]:
+{Bulbasaur: (HP22) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])} VS
+{Charmander: (HP2) (Abilities: [{Damage: 4 Stun Cooldown: 0/4}, {Damage: 7 Cooldown: 5/6}])}
+	Charmander (2) uses ability [{Damage: 4 Stun Cooldown: 0/4}]. It was effective!
+	Bulbasaur (22) uses ability [{Damage: 6 Cooldown: 0/4}]. It was effective!
+	Evolved: Bulbasaur (HP: 55) (Special attack: 8) (Defense: 8) (Special defense: 6) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])
+Result of Adventure: jon's Bulbasaur vs jaon's Charmander: Bulbasaur (HP: 56) (Special attack: 9) (Defense: 9) (Special defense: 7) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}]) wins!
+
+Start of new Adventure: jon's Charmander vs jaon's Pikachu
+
+Arena Duel: jon's Charmander (HP: 60) (Attack: 7) (Defense: 5) (Special defense: 4) (Abilities: [{Damage: 4 Stun Cooldown: 0/4}, {Damage: 7 Cooldown: 0/6}]) VS jaon's Pikachu (HP: 45) (Special attack: 4) (Defense: 2) (Special defense: 3) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}]). Fight!
+[Turn 0]:
+{Charmander: (HP60) (Abilities: [{Damage: 4 Stun Cooldown: 0/4}, {Damage: 7 Cooldown: 0/6}])} VS
+{Pikachu: (HP45) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])}
+	Pikachu (45) uses attack. It was effective!
+	Charmander (60) uses ability [{Damage: 7 Cooldown: 0/6}]. It was effective!
+[Turn 1]:
+{Charmander: (HP60) (Abilities: [{Damage: 4 Stun Cooldown: 0/4}, {Damage: 7 Cooldown: 6/6}])} VS
+{Pikachu: (HP38) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])}
+	Pikachu (38) uses ability [{Damage: 4 Stun Dodge Cooldown: 0/5}]. It was effective!
+	Charmander (60) uses ability [{Damage: 4 Stun Cooldown: 0/4}]. It wasn't efective.
+[Turn 2]:
+{Charmander: (HP56) (Abilities: [{Damage: 4 Stun Cooldown: 4/4}, {Damage: 7 Cooldown: 5/6}])} VS
+{Pikachu: (HP38) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 5/5}])}
+	Charmander is stunned!
+	Pikachu (38) uses ability [{Damage: 6 Cooldown: 0/4}]. It was effective!
+[Turn 3]:
+{Charmander: (HP50) (Abilities: [{Damage: 4 Stun Cooldown: 3/4}, {Damage: 7 Cooldown: 4/6}])} VS
+{Pikachu: (HP38) (Abilities: [{Damage: 6 Cooldown: 4/4}, {Damage: 4 Stun Dodge Cooldown: 4/5}])}
+	Pikachu (38) uses attack. It was effective!
+	Charmander (50) uses attack. It was effective!
+[Turn 4]:
+{Charmander: (HP50) (Abilities: [{Damage: 4 Stun Cooldown: 2/4}, {Damage: 7 Cooldown: 3/6}])} VS
+{Pikachu: (HP33) (Abilities: [{Damage: 6 Cooldown: 3/4}, {Damage: 4 Stun Dodge Cooldown: 3/5}])}
+	Pikachu (33) uses attack. It was effective!
+	Charmander (50) uses attack. It was effective!
+[Turn 5]:
+{Charmander: (HP50) (Abilities: [{Damage: 4 Stun Cooldown: 1/4}, {Damage: 7 Cooldown: 2/6}])} VS
+{Pikachu: (HP28) (Abilities: [{Damage: 6 Cooldown: 2/4}, {Damage: 4 Stun Dodge Cooldown: 2/5}])}
+	Pikachu (28) uses attack. It was effective!
+	Charmander (50) uses attack. It was effective!
+[Turn 6]:
+{Charmander: (HP50) (Abilities: [{Damage: 4 Stun Cooldown: 0/4}, {Damage: 7 Cooldown: 1/6}])} VS
+{Pikachu: (HP23) (Abilities: [{Damage: 6 Cooldown: 1/4}, {Damage: 4 Stun Dodge Cooldown: 1/5}])}
+	Pikachu (23) uses attack. It was effective!
+	Charmander (50) uses attack. It was effective!
+[Turn 7]:
+{Charmander: (HP50) (Abilities: [{Damage: 4 Stun Cooldown: 0/4}, {Damage: 7 Cooldown: 0/6}])} VS
+{Pikachu: (HP18) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])}
+	Pikachu (18) uses attack. It was effective!
+	Charmander (50) uses ability [{Damage: 4 Stun Cooldown: 0/4}]. It was effective!
+[Turn 8]:
+{Charmander: (HP50) (Abilities: [{Damage: 4 Stun Cooldown: 4/4}, {Damage: 7 Cooldown: 0/6}])} VS
+{Pikachu: (HP14) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])}
+	Pikachu is stunned!
+	Charmander (50) uses ability [{Damage: 7 Cooldown: 0/6}]. It was effective!
+[Turn 9]:
+{Charmander: (HP50) (Abilities: [{Damage: 4 Stun Cooldown: 3/4}, {Damage: 7 Cooldown: 6/6}])} VS
+{Pikachu: (HP7) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])}
+	Pikachu (7) uses attack. It was effective!
+	Charmander (50) uses attack. It was effective!
+[Turn 10]:
+{Charmander: (HP50) (Abilities: [{Damage: 4 Stun Cooldown: 2/4}, {Damage: 7 Cooldown: 5/6}])} VS
+{Pikachu: (HP2) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 4 Stun Dodge Cooldown: 0/5}])}
+	Pikachu (2) uses ability [{Damage: 6 Cooldown: 0/4}]. It was effective!
+	Charmander (50) uses attack. It was effective!
+	Evolved: Charmander (HP: 60) (Attack: 7) (Defense: 5) (Special defense: 4) (Abilities: [{Damage: 4 Stun Cooldown: 0/4}, {Damage: 7 Cooldown: 0/6}])
+Result of Adventure: jon's Charmander vs jaon's Pikachu: Charmander (HP: 61) (Attack: 8) (Defense: 6) (Special defense: 5) (Abilities: [{Damage: 4 Stun Cooldown: 0/4}, {Damage: 7 Cooldown: 0/6}]) wins!
+
+Start of new Adventure: jon's Bulbasaur vs jaon's Bulbasaur
+
+Arena Fight: jon's Bulbasaur (HP: 56) (Special attack: 9) (Defense: 9) (Special defense: 7) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}]) VS Neutrel2 (HP: 20) (Attack: 4) (Defense: 1) (Special defense: 1) (Abilities: [null, null]). Fight!
+[Turn 0]: {Bulbasaur: (HP56) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])} VS {Neutrel2 (HP20)}
+	Bulbasaur (56) uses ability [{Damage: 5 Cooldown: 0/3}]. It was effective!
+	Neutrel2 (20) uses attack. It wasn't efective.
+[Turn 1]: {Bulbasaur: (HP56) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 3/3}])} VS {Neutrel2 (HP15)}
+	Bulbasaur (56) uses attack. It was effective!
+	Neutrel2 (15) uses attack. It wasn't efective.
+[Turn 2]: {Bulbasaur: (HP56) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 2/3}])} VS {Neutrel2 (HP7)}
+	Bulbasaur (56) uses attack. It was effective!
+	Neutrel2 (7) uses attack. It wasn't efective.
+
+Arena Fight: jaon's Bulbasaur (HP: 49) (Special attack: 12) (Defense: 10) (Special defense: 8) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}]) VS Neutrel2 (HP: 20) (Attack: 4) (Defense: 1) (Special defense: 1) (Abilities: [null, null]). Fight!
+[Turn 0]: {Bulbasaur: (HP49) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])} VS {Neutrel2 (HP20)}
+	Bulbasaur (49) uses ability [{Damage: 6 Cooldown: 0/4}]. It was effective!
+	Neutrel2 (20) uses attack. It wasn't efective.
+[Turn 1]: {Bulbasaur: (HP49) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])} VS {Neutrel2 (HP14)}
+	Bulbasaur (49) uses ability [{Damage: 5 Cooldown: 0/3}]. It was effective!
+	Neutrel2 (14) uses attack. It wasn't efective.
+[Turn 2]: {Bulbasaur: (HP49) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])} VS {Neutrel2 (HP9)}
+	Bulbasaur (49) uses attack. It was effective!
+	Neutrel2 (9) uses attack. It wasn't efective.
+Both Pokemons beat Neutrel. Evolve!
+	Evolved: Bulbasaur (HP: 57) (Special attack: 10) (Defense: 10) (Special defense: 8) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])
+	Evolved: Bulbasaur (HP: 50) (Special attack: 13) (Defense: 11) (Special defense: 9) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])
+
+Arena Fight: jon's Bulbasaur (HP: 57) (Special attack: 10) (Defense: 10) (Special defense: 8) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}]) VS Neutrel2 (HP: 20) (Attack: 4) (Defense: 1) (Special defense: 1) (Abilities: [null, null]). Fight!
+[Turn 0]: {Bulbasaur: (HP57) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])} VS {Neutrel2 (HP20)}
+	Bulbasaur (57) uses ability [{Damage: 6 Cooldown: 0/4}]. It was effective!
+	Neutrel2 (20) uses attack. It wasn't efective.
+[Turn 1]: {Bulbasaur: (HP57) (Abilities: [{Damage: 6 Cooldown: 4/4}, {Damage: 5 Cooldown: 0/3}])} VS {Neutrel2 (HP14)}
+	Bulbasaur (57) uses attack. It was effective!
+	Neutrel2 (14) uses attack. It wasn't efective.
+[Turn 2]: {Bulbasaur: (HP57) (Abilities: [{Damage: 6 Cooldown: 3/4}, {Damage: 5 Cooldown: 0/3}])} VS {Neutrel2 (HP5)}
+	Bulbasaur (57) uses attack. It was effective!
+	Neutrel2 (5) uses attack. It wasn't efective.
+
+Arena Fight: jaon's Bulbasaur (HP: 50) (Special attack: 13) (Defense: 11) (Special defense: 9) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}]) VS Neutrel2 (HP: 20) (Attack: 4) (Defense: 1) (Special defense: 1) (Abilities: [null, null]). Fight!
+[Turn 0]: {Bulbasaur: (HP50) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])} VS {Neutrel2 (HP20)}
+	Bulbasaur (50) uses attack. It was effective!
+	Neutrel2 (20) uses attack. It wasn't efective.
+[Turn 1]: {Bulbasaur: (HP50) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])} VS {Neutrel2 (HP8)}
+	Bulbasaur (50) uses ability [{Damage: 6 Cooldown: 0/4}]. It was effective!
+	Neutrel2 (8) uses attack. It wasn't efective.
+[Turn 2]: {Bulbasaur: (HP50) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])} VS {Neutrel2 (HP2)}
+	Bulbasaur (50) uses attack. It was effective!
+	Neutrel2 (2) uses attack. It wasn't efective.
+Both Pokemons beat Neutrel. Evolve!
+	Evolved: Bulbasaur (HP: 58) (Special attack: 11) (Defense: 11) (Special defense: 9) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])
+	Evolved: Bulbasaur (HP: 51) (Special attack: 14) (Defense: 12) (Special defense: 10) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])
+
+Arena Duel: jon's Bulbasaur (HP: 58) (Special attack: 11) (Defense: 11) (Special defense: 9) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}]) VS jaon's Bulbasaur (HP: 51) (Special attack: 14) (Defense: 12) (Special defense: 10) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}]). Fight!
+[Turn 0]:
+{Bulbasaur: (HP58) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])} VS
+{Bulbasaur: (HP51) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])}
+	Bulbasaur (51) uses ability [{Damage: 5 Cooldown: 0/3}]. It was effective!
+	Bulbasaur (58) uses ability [{Damage: 5 Cooldown: 0/3}]. It was effective!
+[Turn 1]:
+{Bulbasaur: (HP53) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 3/3}])} VS
+{Bulbasaur: (HP46) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 3/3}])}
+	Bulbasaur (46) uses ability [{Damage: 6 Cooldown: 0/4}]. It was effective!
+	Bulbasaur (53) uses attack. It was effective!
+[Turn 2]:
+{Bulbasaur: (HP47) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 2/3}])} VS
+{Bulbasaur: (HP45) (Abilities: [{Damage: 6 Cooldown: 4/4}, {Damage: 5 Cooldown: 2/3}])}
+	Bulbasaur (45) uses attack. It was effective!
+	Bulbasaur (47) uses attack. It was effective!
+[Turn 3]:
+{Bulbasaur: (HP42) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 1/3}])} VS
+{Bulbasaur: (HP44) (Abilities: [{Damage: 6 Cooldown: 3/4}, {Damage: 5 Cooldown: 1/3}])}
+	Bulbasaur (44) uses attack. It was effective!
+	Bulbasaur (42) uses attack. It was effective!
+[Turn 4]:
+{Bulbasaur: (HP37) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])} VS
+{Bulbasaur: (HP43) (Abilities: [{Damage: 6 Cooldown: 2/4}, {Damage: 5 Cooldown: 0/3}])}
+	Bulbasaur (43) uses attack. It was effective!
+	Bulbasaur (37) uses ability [{Damage: 5 Cooldown: 0/3}]. It was effective!
+[Turn 5]:
+{Bulbasaur: (HP32) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 3/3}])} VS
+{Bulbasaur: (HP38) (Abilities: [{Damage: 6 Cooldown: 1/4}, {Damage: 5 Cooldown: 0/3}])}
+	Bulbasaur (38) uses attack. It was effective!
+	Bulbasaur (32) uses ability [{Damage: 6 Cooldown: 0/4}]. It was effective!
+[Turn 6]:
+{Bulbasaur: (HP27) (Abilities: [{Damage: 6 Cooldown: 4/4}, {Damage: 5 Cooldown: 2/3}])} VS
+{Bulbasaur: (HP32) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])}
+	Bulbasaur (32) uses ability [{Damage: 5 Cooldown: 0/3}]. It was effective!
+	Bulbasaur (27) uses attack. It was effective!
+[Turn 7]:
+{Bulbasaur: (HP22) (Abilities: [{Damage: 6 Cooldown: 3/4}, {Damage: 5 Cooldown: 1/3}])} VS
+{Bulbasaur: (HP31) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 3/3}])}
+	Bulbasaur (31) uses ability [{Damage: 6 Cooldown: 0/4}]. It was effective!
+	Bulbasaur (22) uses attack. It was effective!
+[Turn 8]:
+{Bulbasaur: (HP16) (Abilities: [{Damage: 6 Cooldown: 2/4}, {Damage: 5 Cooldown: 0/3}])} VS
+{Bulbasaur: (HP30) (Abilities: [{Damage: 6 Cooldown: 4/4}, {Damage: 5 Cooldown: 2/3}])}
+	Bulbasaur (30) uses attack. It was effective!
+	Bulbasaur (16) uses attack. It was effective!
+[Turn 9]:
+{Bulbasaur: (HP11) (Abilities: [{Damage: 6 Cooldown: 1/4}, {Damage: 5 Cooldown: 0/3}])} VS
+{Bulbasaur: (HP29) (Abilities: [{Damage: 6 Cooldown: 3/4}, {Damage: 5 Cooldown: 1/3}])}
+	Bulbasaur (29) uses attack. It was effective!
+	Bulbasaur (11) uses ability [{Damage: 5 Cooldown: 0/3}]. It was effective!
+[Turn 10]:
+{Bulbasaur: (HP6) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 3/3}])} VS
+{Bulbasaur: (HP24) (Abilities: [{Damage: 6 Cooldown: 2/4}, {Damage: 5 Cooldown: 0/3}])}
+	Bulbasaur (24) uses ability [{Damage: 5 Cooldown: 0/3}]. It was effective!
+	Bulbasaur (6) uses attack. It was effective!
+[Turn 11]:
+{Bulbasaur: (HP1) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 2/3}])} VS
+{Bulbasaur: (HP23) (Abilities: [{Damage: 6 Cooldown: 1/4}, {Damage: 5 Cooldown: 3/3}])}
+	Bulbasaur (23) uses attack. It was effective!
+	Bulbasaur (1) uses ability [{Damage: 6 Cooldown: 0/4}]. It was effective!
+	Evolved: Bulbasaur (HP: 58) (Special attack: 11) (Defense: 11) (Special defense: 9) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}])
+Result of Adventure: jon's Bulbasaur vs jaon's Bulbasaur: Bulbasaur (HP: 59) (Special attack: 12) (Defense: 12) (Special defense: 10) (Abilities: [{Damage: 6 Cooldown: 0/4}, {Damage: 5 Cooldown: 0/3}]) wins!
+

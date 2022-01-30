@@ -88,7 +88,6 @@ public class Pokemon implements IPokemon {
     }
 
     public String toString() {
-//        int att = attack != null ? attack : specialAttack;
         String att = attack != null ? ") (Attack: " + attack : ") (Special attack: " + specialAttack;
         return name + " (HP: " + hp + att + ") (Defense: " + defense + ") (Special defense: " + specialDefense + ") (Abilities: " + Arrays.toString(abilities) + ")";
     }
