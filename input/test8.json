@@ -1,5 +1,5 @@
 {
-  "logger": "file",
+  "logger": "both",
   "trainers": [
     {
       "name": "Jon",
