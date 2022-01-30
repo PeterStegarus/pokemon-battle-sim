@@ -8,6 +8,7 @@
         {
           "name": "Pikachu",
           "items": [
+            "Vitamine",
             "Scut",
             "Sabiuta"
           ]
@@ -15,6 +16,7 @@
         {
           "name": "Bulbasaur",
           "items": [
+            "Vitamine",
             "Scut",
             "Vesta"
           ]
@@ -34,21 +36,24 @@
       "age": 30,
       "pokemons": [
         {
-          "name": "Bulbasaur",
+          "name": "Squirtle",
           "items": [
+            "Vitamine",
             "Sabiuta"
           ]
         },
         {
-          "name": "Charmander",
+          "name": "Vulpix",
           "items": [
+            "Vitamine",
             "Scut",
             "Scut"
           ]
         },
         {
-          "name": "Pikachu",
+          "name": "Eevee",
           "items": [
+            "Vitamine",
             "Vesta",
             "Sabiuta"
           ]

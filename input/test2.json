@@ -6,24 +6,26 @@
       "age": 20,
       "pokemons": [
         {
-          "name": "Pikachu",
-          "items": [
-            "Scut",
-            "Sabiuta"
-          ]
-        },
-        {
           "name": "Bulbasaur",
           "items": [
             "Scut",
-            "Vesta"
+            "Sabiuta",
+            "BaghetaMagica"
           ]
         },
         {
           "name": "Charmander",
           "items": [
+            "Pelerina",
+            "Vitamine",
+            "BradDeCraciun"
+          ]
+        },
+        {
+          "name": "Squirtle",
+          "items": [
             "Vesta",
-            "Scut",
+            "BradDeCraciun",
             "Sabiuta"
           ]
         }
@@ -34,23 +36,27 @@
       "age": 30,
       "pokemons": [
         {
-          "name": "Bulbasaur",
-          "items": [
-            "Sabiuta"
-          ]
-        },
-        {
           "name": "Charmander",
           "items": [
-            "Scut",
-            "Scut"
+            "Sabiuta",
+            "BaghetaMagica",
+            "BradDeCraciun"
           ]
         },
         {
-          "name": "Pikachu",
+          "name": "Squirtle",
+          "items": [
+            "Scut",
+            "Vitamine",
+            "Pelerina"
+          ]
+        },
+        {
+          "name": "Snorlax",
           "items": [
             "Vesta",
-            "Sabiuta"
+            "Sabiuta",
+            "Scut"
           ]
         }
       ]

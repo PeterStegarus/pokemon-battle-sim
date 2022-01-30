@@ -6,25 +6,26 @@
       "age": 20,
       "pokemons": [
         {
-          "name": "Pikachu",
+          "name": "Vulpix",
           "items": [
             "Scut",
             "Sabiuta"
           ]
         },
         {
-          "name": "Bulbasaur",
+          "name": "Eevee",
           "items": [
             "Scut",
-            "Vesta"
+            "Vesta",
+            "BaghetaMagica"
           ]
         },
         {
-          "name": "Charmander",
+          "name": "Jigglypuff",
           "items": [
             "Vesta",
             "Scut",
-            "Sabiuta"
+            "BradDeCraciun"
           ]
         }
       ]
@@ -34,20 +35,20 @@
       "age": 30,
       "pokemons": [
         {
-          "name": "Bulbasaur",
+          "name": "Eevee",
           "items": [
             "Sabiuta"
           ]
         },
         {
-          "name": "Charmander",
+          "name": "Jigglypuff",
           "items": [
             "Scut",
-            "Scut"
+            "BradDeCraciun"
           ]
         },
         {
-          "name": "Pikachu",
+          "name": "Meowth",
           "items": [
             "Vesta",
             "Sabiuta"

@@ -6,7 +6,7 @@
       "age": 20,
       "pokemons": [
         {
-          "name": "Pikachu",
+          "name": "Eevee",
           "items": [
             "Scut",
             "Sabiuta"
@@ -16,11 +16,12 @@
           "name": "Bulbasaur",
           "items": [
             "Scut",
-            "Vesta"
+            "Vesta",
+            "Vitamine"
           ]
         },
         {
-          "name": "Charmander",
+          "name": "Meowth",
           "items": [
             "Vesta",
             "Scut",
@@ -34,23 +35,26 @@
       "age": 30,
       "pokemons": [
         {
-          "name": "Bulbasaur",
+          "name": "Snorlax",
           "items": [
-            "Sabiuta"
-          ]
-        },
-        {
-          "name": "Charmander",
-          "items": [
-            "Scut",
+            "Sabiuta",
+            "Vitamine",
             "Scut"
           ]
         },
         {
-          "name": "Pikachu",
+          "name": "Squirtle",
           "items": [
             "Vesta",
-            "Sabiuta"
+            "Vitamine"
+          ]
+        },
+        {
+          "name": "Snorlax",
+          "items": [
+            "Vesta",
+            "Sabiuta",
+            "Pelerina"
           ]
         }
       ]
