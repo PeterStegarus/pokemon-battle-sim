@@ -23,10 +23,6 @@ FileLogger:
 
 
 
-// dc n-am folosit Comparable in Pokemon ca sa gasesc cel mai bun Pokemon? Pokemonilor nu le pasa de care e cel mai bun
-pokemon, doar trainerilor le pasa. Nu aglomerez pokemonul mai mult decat e cazul
-
-
 ------
 battle:
 
