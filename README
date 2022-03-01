@@ -1,29 +1,27 @@
-1. factory
+factory:
 PokemonFactory
 ItemFactory
 
-2. strategy (in PokemonFactory and in ItemFactory)
+strategy (in PokemonFactory and in ItemFactory):
 select Maker at runtime and make the correct pokemon or item
 
-3. filter (in PokemonFactory and in ItemFactory)
+filter (in PokemonFactory and in ItemFactory):
 select the correct maker based on the pokemon or item it makes
 
-4. command
+command:
 fight command:
     client: arena event
     invoker: trainer
     command: (Ability|Attack)FightCommand
     receiver: pokemons
 
-5. decorator
+decorator:
 FighterPokemon:
     pokemon only has the stats. FighterPokemon maintains the state during a fight
 FileLogger:
     all loggers except for the most basic one (ConsoleLogger) should be decorators
 
 
-
-------
 battle:
 
 while both pokemons still alive:
